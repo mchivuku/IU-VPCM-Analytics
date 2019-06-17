@@ -1,0 +1,11 @@
+{
+  "auth_file": "auth.k",
+  "raw_data_dir": "../../data/raw_data/iu-bloomington/twitter",
+  "processed_data_dir": "../../data/processed_data/iu-bloomington/twitter",
+  "username": "@iubloomington",
+  "start_date": "2018-06-08",
+  "end_date": "2019-06-14",
+  "user_timeline_results_filename": "indiana-university-bl_twitter_data.csv",
+  "engagement_config_yaml_file": "engagement_config.yaml",
+  "user_profile_results_filename": "indiana-university-bl_twitter_user_profile_data.csv"
+}
