@@ -1,0 +1,2329 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0417.1429                               -->
+<workbook source-build='2019.1.3 (20191.19.0417.1429)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='IU Web Colors' type='regular'>
+      <color>#990000</color>
+      <color>#edebeb</color>
+      <color>#01426a</color>
+      <color>#006298</color>
+      <color>#512a44</color>
+      <color>#66435a</color>
+      <color>#191919</color>
+      <color>#4a3c31</color>
+    </color-palette>
+  </preferences>
+  <style-theme name='clean' />
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Start date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2018-06-15#'>
+        <calculation class='tableau' formula='#2018-06-15#' />
+        <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+      </column>
+      <column caption='End date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2019-01-26#'>
+        <calculation class='tableau' formula='#2019-01-26#' />
+        <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+      </column>
+    </datasource>
+    <datasource caption='user_profile_data+ (iu_twitter_data)' inline='true' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='iu_twitter_data' name='google-sheets.0z7wce708ehd4m172q6tj1wfa7q9'>
+            <connection REDIRECT_URI='urn:ietf:wg:oauth:2.0:oob' SCOPE='email profile https://www.googleapis.com/auth/drive.readonly' class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='iu_twitter_data' googleSheetId='1zqxSiK_TY43Ftuz0ndKawG1BJXH3rUNEcocUay9ca84' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='iu.iet.team@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[twitter_data].[hashtags]' />
+              <expression op='[most_freq_100_hashtags+].[hashtag]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[user_profile_data].[screen_name]' />
+                <expression op='[twitter_data].[user]' />
+              </expression>
+            </clause>
+            <relation connection='google-sheets.0z7wce708ehd4m172q6tj1wfa7q9' name='user_profile_data' table='[user_profile_data$]' type='table'>
+              <columns gridOrigin='A1:I2:no:A1:I2:0' header='yes' outcome='6'>
+                <column datatype='integer' name='user_id' ordinal='0' />
+                <column datatype='string' name='name' ordinal='1' />
+                <column datatype='string' name='screen_name' ordinal='2' />
+                <column datatype='integer' name='followers_count' ordinal='3' />
+                <column datatype='integer' name='friends_count' ordinal='4' />
+                <column datatype='integer' name='favourites_count' ordinal='5' />
+                <column datatype='integer' name='statuses_count' ordinal='6' />
+                <column datatype='integer' name='total_reach' ordinal='7' />
+                <column datatype='real' name='avg_follower_cnt' ordinal='8' />
+              </columns>
+            </relation>
+            <relation connection='google-sheets.0z7wce708ehd4m172q6tj1wfa7q9' name='twitter_data' table='[twitter_data$]' type='table'>
+              <columns gridOrigin='A1:W2748:no:A1:W2748:0' header='yes' outcome='2'>
+                <column datatype='datetime' name='created' ordinal='0' />
+                <column datatype='string' name='text' ordinal='1' />
+                <column datatype='real' name='polarity' ordinal='2' />
+                <column datatype='real' name='subjectivity' ordinal='3' />
+                <column datatype='integer' name='tweet_id' ordinal='4' />
+                <column datatype='boolean' name='truncated' ordinal='5' />
+                <column datatype='string' name='user' ordinal='6' />
+                <column datatype='integer' name='user_followers_count' ordinal='7' />
+                <column datatype='integer' name='user_friends_count' ordinal='8' />
+                <column datatype='integer' name='user_favourites_count' ordinal='9' />
+                <column datatype='integer' name='user_statuses_count' ordinal='10' />
+                <column datatype='string' name='retweeted_status' ordinal='11' />
+                <column datatype='integer' name='retweet_count' ordinal='12' />
+                <column datatype='integer' name='favorite_count' ordinal='13' />
+                <column datatype='integer' name='reply_count' ordinal='14' />
+                <column datatype='string' name='at_mentions' ordinal='15' />
+                <column datatype='string' name='hashtags' ordinal='16' />
+                <column datatype='string' name='urls' ordinal='17' />
+                <column datatype='string' name='source' ordinal='18' />
+                <column datatype='string' name='lat' ordinal='19' />
+                <column datatype='string' name='long' ordinal='20' />
+                <column datatype='string' name='tweet_type' ordinal='21' />
+                <column datatype='string' name='words' ordinal='22' />
+              </columns>
+            </relation>
+          </relation>
+          <relation all='true' name='most_freq_100_hashtags+' type='union'>
+            <columns header='yes'>
+              <column datatype='string' name='hashtag' />
+              <column datatype='integer' name='count' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='google-sheets.0z7wce708ehd4m172q6tj1wfa7q9' name='most_freq_100_hashtags' table='[most_freq_100_hashtags$]' type='table'>
+              <columns gridOrigin='A1:B101:no:A1:B101:0' header='yes' outcome='6'>
+                <column datatype='string' name='hashtag' ordinal='0' />
+                <column datatype='integer' name='count' ordinal='1' />
+              </columns>
+            </relation>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>screen_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[screen_name]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>screen_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>followers_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[followers_count]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>followers_count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>friends_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[friends_count]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>friends_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>favourites_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[favourites_count]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>favourites_count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>statuses_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[statuses_count]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>statuses_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_reach</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_reach]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>total_reach</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_follower_cnt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_follower_cnt]</local-name>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias>avg_follower_cnt</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[user_profile_data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I2:no:A1:I2:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>created</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>polarity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[polarity]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>polarity</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subjectivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[subjectivity]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>subjectivity</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tweet_id]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>tweet_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>truncated</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[truncated]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>truncated</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[user]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>user</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_followers_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_followers_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>user_followers_count</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_friends_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_friends_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>user_friends_count</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_favourites_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_favourites_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>user_favourites_count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_statuses_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_statuses_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>user_statuses_count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweeted_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[retweeted_status]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>retweeted_status</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retweet_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>retweet_count</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>favorite_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[favorite_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>favorite_count</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reply_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reply_count]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>reply_count</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>at_mentions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[at_mentions]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>at_mentions</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hashtags</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[hashtags]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>hashtags</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urls</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[urls]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>urls</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>long</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[long]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>long</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tweet_type]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>tweet_type</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>words</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[words]</local-name>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias>words</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[twitter_data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:W2748:no:A1:W2748:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[most_freq_100_hashtags+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B101:no:A1:B101:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hashtag</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[hashtag]</local-name>
+            <parent-name>[most_freq_100_hashtags+]</parent-name>
+            <remote-alias>hashtag</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[most_freq_100_hashtags+]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[most_freq_100_hashtags+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[most_freq_100_hashtags+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:followers_count:qk]&quot;' value='Total Followers' />
+          <alias key='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:Number of Records:qk]&quot;' value='Total Posts' />
+        </aliases>
+      </column>
+      <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+      </column>
+      <column caption='Distinct Records' datatype='integer' name='[Calculation_103582795429163009]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([tweet_id])' />
+      </column>
+      <column caption='Date range' datatype='boolean' name='[Calculation_24206851931537408]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[created] &gt;= [Parameters].[Parameter 1] and [created] &lt;=[Parameters].[Parameter 2]' />
+      </column>
+      <column caption='@Reply' datatype='boolean' name='[Calculation_24206851933102081]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STARTSWITH([text], &quot;@&quot;)' />
+      </column>
+      <column caption='Tweet Engagement Count' datatype='integer' name='[Calculation_24206851940745218]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[retweet_count] + [favorite_count]' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Created Date]' role='dimension' type='ordinal' user:agg-type='MDY' user:base-field='created' user:ui-builder='date-bin-builder'>
+        <calculation class='tableau' formula='(DATEPART(&apos;year&apos;, [created])*10000 + DATEPART(&apos;month&apos;, [created])*100 + DATEPART(&apos;day&apos;, [created]))' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='At Mentions' datatype='string' name='[at_mentions]' role='dimension' type='nominal' />
+      <column caption='Avg Follower Cnt' datatype='real' name='[avg_follower_cnt]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Created' datatype='datetime' name='[created]' role='dimension' type='ordinal' />
+      <column caption='Favorite Count' datatype='integer' name='[favorite_count]' role='measure' type='quantitative' />
+      <column caption='Favourites Count' datatype='integer' name='[favourites_count]' role='measure' type='quantitative' />
+      <column caption='Followers Count' datatype='integer' name='[followers_count]' role='measure' type='quantitative' />
+      <column caption='Friends Count' datatype='integer' name='[friends_count]' role='measure' type='quantitative' />
+      <column caption='Hashtag' datatype='string' name='[hashtag]' role='dimension' type='nominal' />
+      <column caption='Hashtags' datatype='string' name='[hashtags]' role='dimension' type='nominal' />
+      <column caption='Lat' datatype='string' name='[lat]' role='dimension' type='nominal' />
+      <column caption='Long' datatype='string' name='[long]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+      <column caption='Reply Count' datatype='integer' name='[reply_count]' role='measure' type='quantitative' />
+      <column caption='Retweet Count' datatype='integer' name='[retweet_count]' role='measure' type='quantitative' />
+      <column caption='Retweeted Status' datatype='string' name='[retweeted_status]' role='dimension' type='nominal' />
+      <column caption='Screen Name' datatype='string' name='[screen_name]' role='dimension' type='nominal' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <column caption='Statuses Count' datatype='integer' name='[statuses_count]' role='measure' type='quantitative' />
+      <column caption='Subjectivity' datatype='real' name='[subjectivity]' role='measure' type='quantitative' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Total Reach' datatype='integer' name='[total_reach]' role='measure' type='quantitative' />
+      <column caption='Truncated' datatype='boolean' name='[truncated]' role='dimension' type='nominal' />
+      <column caption='Tweet Id' datatype='integer' name='[tweet_id]' role='dimension' type='ordinal' />
+      <column caption='Tweet Type' datatype='string' name='[tweet_type]' role='dimension' type='nominal' />
+      <column caption='Urls' datatype='string' name='[urls]' role='dimension' type='nominal' />
+      <column caption='User' datatype='string' name='[user]' role='dimension' type='nominal' />
+      <column caption='User Favourites Count' datatype='integer' name='[user_favourites_count]' role='measure' type='quantitative' />
+      <column caption='User Followers Count' datatype='integer' name='[user_followers_count]' role='measure' type='quantitative' />
+      <column caption='User Friends Count' datatype='integer' name='[user_friends_count]' role='measure' type='quantitative' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='User Statuses Count' datatype='integer' name='[user_statuses_count]' role='measure' type='quantitative' />
+      <column caption='Words' datatype='string' name='[words]' role='dimension' type='nominal' />
+      <column-instance column='[followers_count]' derivation='Attribute' name='[attr:followers_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_103582795377205248]' derivation='None' name='[none:Calculation_103582795377205248:nk]' pivot='key' type='nominal' />
+      <column-instance column='[hashtag]' derivation='None' name='[none:hashtag:nk]' pivot='key' type='nominal' />
+      <column-instance column='[tweet_type]' derivation='None' name='[none:tweet_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[created]' derivation='Day-Trunc' name='[tdy:created:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Sentiment)' hidden='true' name='[Action (Sentiment)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_103582795377205248]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Sentiment,DAY(Created))' hidden='true' name='[Action (Sentiment,DAY(Created))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_103582795377205248]' />
+          <groupfilter function='level-members' level='[tdy:created:ok]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.679612' measure-ordering='alphabetic' measure-percentage='0.262136' parameter-percentage='0.0582524' show-structure='true' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:tweet_type:nk]' palette='IU Web Colors' type='palette'>
+            <map to='#006298'>
+              <bucket>&quot;tweet&quot;</bucket>
+            </map>
+            <map to='#4a3c31'>
+              <bucket>&quot;retweet&quot;</bucket>
+            </map>
+            <map to='#990000'>
+              <bucket>&quot;quote&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_103582795377205248:nk]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:hashtag:nk]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;IUBloomington&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;PrideofIndiana&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;iuday&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;science&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;ElectionDay&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;IUattheFair&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;IUinRwanda&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;voters&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;Indy&quot;</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>&quot;onthisdayIUPUI&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;ForAll&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;IIBTV&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;iuwbb&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;ErniePyleDay&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;GRAMMYs&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;IUResearch&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;DNA&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;entrepreneurs&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;IUinThailand&quot;</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>&quot;WellsBeingWeek&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;InfyPathfinders&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;iubot&quot;</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;3dprinting&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;IUDonors&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;MyIUPUI&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;STEM&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;IU200&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;IUSocial&quot;</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>&quot;opioid&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>&quot;myiuk&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;Hoosiers&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;IUVotes&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;iu&quot;</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>&quot;OperationStormyWeather&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;FirstGeneration&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;IUMoveIn&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;WomensHistoryMonth&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;IUBB&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;IUTeamRural&quot;</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>&quot;opioidcrisis&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;IndianaUniv&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;naloxone&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;IndianaUniversity&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;NationalCookieDay&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;TheFutureIsFemale&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;B1GVotes&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;IUAlumni&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;IUEast&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;thankstoIUdonors&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;GivingTuesday&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;IUPrecisionHealth&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;cancer&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;diversity&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;IUGrandChallenges&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;veteran&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Start date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2018-06-15#'>
+          <calculation class='tableau' formula='#2018-06-15#' />
+          <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+        </column>
+        <column caption='End date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2019-01-26#'>
+          <calculation class='tableau' formula='#2019-01-26#' />
+          <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Overview' type='sheet' worksheet='Sentiment Count' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Overview' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Content Analysis' type='sheet' worksheet='Sentiment Analysis' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Content Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Executive Overview - IU Twitter Account '>
+      <layout-options export-center-horz='true' export-center-vert='true'>
+        <title>
+          <formatted-text>
+            <run fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[followers_count]' derivation='Attribute' name='[attr:followers_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_reach]' derivation='Attribute' name='[attr:total_reach:qk]' pivot='key' type='quantitative' />
+            <column caption='Followers Count' datatype='integer' name='[followers_count]' role='measure' type='quantitative' />
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Reach' datatype='integer' name='[total_reach]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:followers_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:Number of Records:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:total_reach:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:followers_count:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:total_reach:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]'>
+            <groupfilter function='level-members' level='[Calculation_103582795377205248]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='34' />
+            <format attr='width' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='211' />
+            <format attr='font-family' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='Tableau Bold' />
+            <format attr='text-align' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='center' />
+            <format attr='font-family' data-class='subtotal' value='Tableau Medium' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='22' />
+            <format attr='font-weight' data-class='subtotal' value='normal' />
+            <format attr='font-family' data-class='subtotal' value='Tableau Book' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='Tableau Regular' />
+            <format attr='text-align' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='center' />
+            <format attr='font-family' scope='rows' value='Tableau Book' />
+            <format attr='font-weight' scope='rows' value='normal' />
+            <format attr='font-family' scope='cols' value='Tableau Book' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='text-align' value='center' />
+            <format attr='font-size' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]' value='12' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' data-class='subtotal' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{24F52088-6C6C-4734-83C4-165AAC768BBE}' />
+    </worksheet>
+    <worksheet name='Most Frequent Words'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9DFFB82D-E858-448A-9F7A-A124FA430388}' />
+    </worksheet>
+    <worksheet name='Most Mentions'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{412938DF-647D-482D-8C31-01E908840846}' />
+    </worksheet>
+    <worksheet name='Sentiment Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='15'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2018-06-15#'>
+              <calculation class='tableau' formula='#2018-06-15#' />
+              <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+            </column>
+            <column caption='End date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2019-01-26#'>
+              <calculation class='tableau' formula='#2019-01-26#' />
+              <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column caption='Distinct Records' datatype='integer' name='[Calculation_103582795429163009]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([tweet_id])' />
+            </column>
+            <column caption='Date range' datatype='boolean' name='[Calculation_24206851931537408]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[created] &gt;= [Parameters].[Parameter 1] and [created] &lt;=[Parameters].[Parameter 2]' />
+            </column>
+            <column aggregation='Sum' datatype='integer' name='[Created Date]' role='dimension' type='ordinal' user:agg-type='MDY' user:base-field='created' user:ui-builder='date-bin-builder'>
+              <calculation class='tableau' formula='(DATEPART(&apos;year&apos;, [created])*10000 + DATEPART(&apos;month&apos;, [created])*100 + DATEPART(&apos;day&apos;, [created]))' />
+            </column>
+            <column caption='Created' datatype='datetime' name='[created]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_103582795377205248]' derivation='None' name='[none:Calculation_103582795377205248:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_24206851931537408]' derivation='None' name='[none:Calculation_24206851931537408:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Created Date]' derivation='None' name='[none:Created Date:ok]' pivot='key' type='ordinal' />
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column-instance column='[created]' derivation='Day-Trunc' name='[tdy:created:ok]' pivot='key' type='ordinal' />
+            <column caption='Tweet Id' datatype='integer' name='[tweet_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_103582795429163009]' derivation='User' name='[usr:Calculation_103582795429163009:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Negative&quot;</bucket>
+              <bucket>&quot;Neutral&quot;</bucket>
+              <bucket>&quot;Positive&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851931537408:nk]'>
+            <groupfilter function='member' level='[none:Calculation_24206851931537408:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Created Date:ok]'>
+            <groupfilter function='level-members' level='[none:Created Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851931537408:nk]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Created Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[usr:Calculation_103582795429163009:qk]' scope='rows' value='Total # of Posts' />
+            <format attr='width' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[usr:Calculation_103582795429163009:qk]' value='36' />
+            <format attr='height' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tdy:created:ok]' value='37' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Created Date:ok]' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tdy:created:ok]' value='0' />
+            <format attr='text-orientation' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Created Date:ok]' value='0' />
+            <format attr='font-family' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Created Date:ok]' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'>&lt;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Day of Created:&#9;</run>
+                <run bold='true'>&lt;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tdy:created:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Posts:&#9;</run>
+                <run bold='true'>&lt;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[usr:Calculation_103582795429163009:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='229' />
+                <format attr='maxheight' value='229' />
+                <format attr='minwidth' value='12420' />
+                <format attr='maxwidth' value='12420' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[usr:Calculation_103582795429163009:qk]</rows>
+        <cols>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tdy:created:ok]</cols>
+      </table>
+      <simple-id uuid='{7A210C4A-2349-42EA-90F8-2EB4255DC960}' />
+    </worksheet>
+    <worksheet name='Sentiment Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_103582795377205248]' derivation='Count' name='[cnt:Calculation_103582795377205248:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_103582795377205248]' derivation='None' name='[none:Calculation_103582795377205248:nk]' pivot='key' type='nominal' />
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='221' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]' />
+              <lod column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7031491994857788' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]</field>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>166</value>
+                <value>&quot;Negative&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{8F32DB49-CF5C-46C0-98FA-887888FABDCC}' />
+    </worksheet>
+    <worksheet name='Sentiment Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='15'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_103582795377205248]' derivation='Count' name='[cnt:Calculation_103582795377205248:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_103582795377205248]' derivation='None' name='[none:Calculation_103582795377205248:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_103582795377205248]' derivation='Count' name='[pcto:cnt:Calculation_103582795377205248:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]'>
+            <groupfilter function='level-members' level='[Calculation_103582795377205248]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[pcto:cnt:Calculation_103582795377205248:qk]' />
+              <size column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'>&lt;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[pcto:cnt:Calculation_103582795377205248:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Percentage of Total: </run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='1.7911050319671631' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols onLeft='true' total='true' />
+        <percentages enabled='true' mode='table' />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Neutral&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Negative&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Positive&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{5FA1666C-5F47-403B-BE14-3F100445382C}' />
+    </worksheet>
+    <worksheet name='Top Hashtags'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='15'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column caption='Hashtag' datatype='string' name='[hashtag]' role='dimension' type='nominal' />
+            <column-instance column='[count]' derivation='None' name='[none:count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hashtag]' derivation='None' name='[none:hashtag:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:count:qk]' />
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:hashtag:nk]' />
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:hashtag:nk]' />
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6E957FD4-27A3-4277-9BA5-A25197092FA1}' />
+    </worksheet>
+    <worksheet name='Top Tweets'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='15'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column caption='Favorite Count' datatype='integer' name='[favorite_count]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_103582795377205248]' derivation='None' name='[none:Calculation_103582795377205248:nk]' pivot='key' type='nominal' />
+            <column-instance column='[text]' derivation='None' name='[none:text:nk]' pivot='key' type='nominal' />
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column caption='Retweet Count' datatype='integer' name='[retweet_count]' role='measure' type='quantitative' />
+            <column-instance column='[favorite_count]' derivation='Sum' name='[sum:favorite_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retweet_count]' derivation='Sum' name='[sum:retweet_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:favorite_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:retweet_count:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]'>
+            <groupfilter function='level-members' level='[Calculation_103582795377205248]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]'>
+            <groupfilter function='level-members' level='[none:text:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:favorite_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]' value='36' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]' value='360' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+              <text column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]</rows>
+        <cols>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{705D6D15-4469-4D48-8393-C22FA51E8C3D}' />
+    </worksheet>
+    <worksheet name='Tweets By Sentiment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Start date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2018-06-15#'>
+              <calculation class='tableau' formula='#2018-06-15#' />
+              <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+            </column>
+            <column caption='End date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2019-01-26#'>
+              <calculation class='tableau' formula='#2019-01-26#' />
+              <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column caption='Date range' datatype='boolean' name='[Calculation_24206851931537408]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[created] &gt;= [Parameters].[Parameter 1] and [created] &lt;=[Parameters].[Parameter 2]' />
+            </column>
+            <column-instance column='[created]' derivation='Attribute' name='[attr:created:ok]' pivot='key' type='ordinal' />
+            <column caption='Created' datatype='datetime' name='[created]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_103582795377205248]' derivation='None' name='[none:Calculation_103582795377205248:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_24206851931537408]' derivation='None' name='[none:Calculation_24206851931537408:nk]' pivot='key' type='nominal' />
+            <column-instance column='[text]' derivation='None' name='[none:text:nk]' pivot='key' type='nominal' />
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column-instance column='[created]' derivation='Day-Trunc' name='[tdy:created:ok]' pivot='key' type='ordinal' />
+            <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment,DAY(Created))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Calculation_103582795377205248]' />
+              <groupfilter function='level-members' level='[tdy:created:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851931537408:nk]'>
+            <groupfilter function='member' level='[none:Calculation_24206851931537408:nk]' member='true' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]' direction='ASC' />
+          <slices>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851931537408:nk]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment,DAY(Created))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='38' />
+            <format attr='height' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]' value='57' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]' value='544' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:created:ok]' />
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]</rows>
+        <cols />
+        <mark-labels>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields>
+                    <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]</field>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:text:nk]</field>
+                  <field>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[attr:created:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Neutral&quot;</value>
+                <value>&quot;\&quot;At Indiana University, we consider the crew of the USS Indiana to be honorary Hoosiers.\&quot;&#10;&#10;IU launches scholarship… https://t.co/Y63KwjeDP8&quot;</value>
+                <value>#2018-09-26 19:16:00#</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{FB4C4824-58E9-4FD2-B0E1-3FABDAF43C91}' />
+    </worksheet>
+    <worksheet name='Tweets over time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='15'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_profile_data+ (iu_twitter_data)' name='federated.0mj6v3701mksgw1bd3lmz1wcf76x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mj6v3701mksgw1bd3lmz1wcf76x'>
+            <column caption='Sentiment' datatype='string' name='[Calculation_103582795377205248]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [polarity]&gt;0 THEN &quot;Positive&quot;&#10;ELSEIF   [polarity]&lt;0 THEN &quot;Negative&quot;&#10;ELSE &quot;Neutral&quot;&#10;END' />
+            </column>
+            <column caption='@Reply' datatype='boolean' name='[Calculation_24206851933102081]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STARTSWITH([text], &quot;@&quot;)' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Created' datatype='datetime' name='[created]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_24206851933102081]' derivation='None' name='[none:Calculation_24206851933102081:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tweet_type]' derivation='None' name='[none:tweet_type:nk]' pivot='key' type='nominal' />
+            <column caption='Polarity' datatype='real' name='[polarity]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+            <column-instance column='[created]' derivation='Month-Trunc' name='[tmn:created:qk]' pivot='key' type='quantitative' />
+            <column caption='Tweet Type' datatype='string' name='[tweet_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]'>
+            <groupfilter function='level-members' level='[Calculation_103582795377205248]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851933102081:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_24206851933102081:nk]' member='false' />
+              <groupfilter function='member' level='[none:Calculation_24206851933102081:nk]' member='true' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' context='true'>
+            <groupfilter function='level-members' level='[none:tweet_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851933102081:nk]</column>
+            <column>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[Action (Sentiment)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tmn:created:qk]' scope='cols' value='Month Created' />
+            <format attr='height' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tmn:created:qk]' value='35' />
+            <format attr='auto-subtitle' class='0' field='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tmn:created:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='130' />
+                <format attr='maxheight' value='130' />
+                <format attr='minwidth' value='702' />
+                <format attr='maxwidth' value='702' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_24206851933102081:nk] * [federated.0mj6v3701mksgw1bd3lmz1wcf76x].[sum:Number of Records:qk])</rows>
+        <cols>[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[tmn:created:qk]</cols>
+      </table>
+      <simple-id uuid='{9AABB1E8-4179-482C-BE7A-502F9FC2EEA3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Content Analysis'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Start date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2018-06-15#'>
+          <calculation class='tableau' formula='#2018-06-15#' />
+          <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+        </column>
+        <column caption='End date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2019-01-26#'>
+          <calculation class='tableau' formula='#2019-01-26#' />
+          <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='41375' id='7' name='Sentiment Analysis' w='56200' x='200' y='9000' />
+        <zone h='8000' id='12' mode='slider' param='[Parameters].[Parameter 1]' type='paramctrl' w='15900' x='23100' y='1750' />
+        <zone h='8000' id='13' mode='slider' param='[Parameters].[Parameter 2]' type='paramctrl' w='16000' x='40100' y='1625' />
+        <zone h='48750' id='14' name='Tweets By Sentiment' w='42700' x='900' y='50000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='5' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='6' param='vert' type='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E92A170C-F8B2-4A83-9B69-38547AFF0B4D}' />
+    </dashboard>
+    <dashboard name='Overview'>
+      <style>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Start date' datatype='date' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='#2018-06-15#'>
+          <calculation class='tableau' formula='#2018-06-15#' />
+          <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+        </column>
+        <column caption='End date' datatype='date' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='#2019-01-26#'>
+          <calculation class='tableau' formula='#2019-01-26#' />
+          <range granularity='1' max='#2019-06-13#' min='#2018-06-08#' period-type='day' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='12250' id='3' name='Executive Overview - IU Twitter Account ' w='98700' x='500' y='500' />
+        <zone h='43000' id='4' name='Tweets over time' w='60400' x='600' y='18625' />
+        <zone h='4875' id='11' mode='slider' param='[Parameters].[Parameter 1]' type='paramctrl' w='21900' x='47300' y='13750'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='5875' id='12' mode='slider' param='[Parameters].[Parameter 2]' type='paramctrl' w='26300' x='72700' y='13500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='5125' id='14' leg-item-layout='horz' name='Tweets over time' pane-specification-id='0' param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' type='color' w='37000' x='23900' y='19125' />
+        <zone h='33750' id='19' name='Sentiment Over Time' show-title='false' w='25600' x='9000' y='66000' />
+        <zone h='34000' id='20' name='Sentiment Count' show-title='false' w='8800' x='100' y='65875' />
+        <zone h='37875' id='26' name='Top Tweets' w='65400' x='34400' y='61875'>
+          <layout-cache type-h='fixed' type-w='fixed' />
+        </zone>
+        <zone forceUpdate='true' h='4750' id='27' type='text' w='34100' x='400' y='61000'>
+          <formatted-text>
+            <run bold='true' fontname='Trebuchet MS' fontsize='15'>Sentiment over time</run>
+          </formatted-text>
+        </zone>
+        <zone h='36375' id='28' name='Top Hashtags' w='35300' x='62000' y='21000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='18' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='91' h='11375' id='3' is-fixed='true' name='Executive Overview - IU Twitter Account ' w='99600' x='400' y='750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8000' id='11' mode='slider' param='[Parameters].[Parameter 1]' type='paramctrl' w='19100' x='59500' y='13000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='8000' id='12' mode='slider' param='[Parameters].[Parameter 2]' type='paramctrl' w='17900' x='80900' y='13000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43000' id='4' is-fixed='true' name='Tweets over time' w='58500' x='600' y='14875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5125' id='14' leg-item-layout='horz' name='Tweets over time' pane-specification-id='0' param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' type='color' w='38400' x='60000' y='21000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5F0DBCE3-D738-4490-B72B-23950345110A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Overview'>
+      <viewpoints>
+        <viewpoint name='Executive Overview - IU Twitter Account '>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Sentiment Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sentiment Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Hashtags'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Tweets'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Tweets over time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='28' />
+      <simple-id uuid='{5B6C339B-8DC7-4BF2-8426-02A9B401FF05}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Content Analysis'>
+      <viewpoints>
+        <viewpoint name='Sentiment Analysis' />
+        <viewpoint name='Tweets By Sentiment'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{B712FA5F-2541-485B-8FB0-27630498D115}' />
+    </window>
+    <window class='worksheet' name='Executive Overview - IU Twitter Account '>
+      <cards>
+        <edge name='left'>
+          <strip size='217'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{3DE3761B-97A5-466F-A7B2-B322701A87EB}' />
+    </window>
+    <window class='worksheet' name='Tweets over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' type='filter' />
+            <card param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' type='highlighter' />
+            <card pane-specification-id='0' param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:tweet_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49EDC5AC-7D98-4580-AC62-DC1867306945}' />
+    </window>
+    <window class='worksheet' name='Top Tweets'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[none:Calculation_103582795377205248:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{F3F5F12E-6CCE-4895-B234-D7E8BAD52CFD}' />
+    </window>
+    <window class='worksheet' name='Sentiment Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0mj6v3701mksgw1bd3lmz1wcf76x].[cnt:Calculation_103582795377205248:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B7324C19-26D3-49D5-A9CD-A1E4354711C3}' />
+    </window>
+    <window class='worksheet' name='Sentiment Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{25CBAEC0-F0F4-46EF-972C-CA6BFD3C84E9}' />
+    </window>
+    <window class='worksheet' name='Top Hashtags'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA9EF7E0-3637-4D33-834B-9BFB8EBB1FBF}' />
+    </window>
+    <window class='worksheet' name='Sentiment Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9493261-5022-4553-9995-916511E41495}' />
+    </window>
+    <window class='worksheet' name='Most Frequent Words'>
+      <cards>
+        <edge name='left'>
+          <strip size='186'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A41853F4-C465-4D28-91EE-0A065AA210DF}' />
+    </window>
+    <window class='worksheet' name='Most Mentions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95198A65-C9F0-4180-9B32-61ABBC7EC592}' />
+    </window>
+    <window class='worksheet' name='Tweets By Sentiment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E550B6E1-E606-43F5-ADC8-8922A7568F6B}' />
+    </window>
+  </windows>
+</workbook>

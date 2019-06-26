@@ -12,10 +12,7 @@ class TweetSentiment:
     @staticmethod
     def clean_tweet(tweet_text):
         return ' '.join(
-            re.sub(
-                "(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)",
-                " ",
-                tweet_text).split())
+            re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)"," ",tweet_text).split())
 
     """
     Get sentiment of the tweets
@@ -36,4 +33,6 @@ class TweetSentiment:
     """
     def get_tweet_sentiment_data(self,tweet):
         self.analysis = TextBlob(TweetSentiment.clean_tweet(tweet))
-        return  self.analysis.sentiment
+        return  self.analysis.sentiment, self.analysis.words
+
+
