@@ -6,8 +6,6 @@ import sys
 from logging.handlers import TimedRotatingFileHandler
 
 Formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
-LOG_FILE = "app.log"
-
 
 def get_console_handler():
     console_handler = logging.StreamHandler(sys.stdout)
@@ -15,18 +13,18 @@ def get_console_handler():
     return console_handler
 
 
-def get_file_handler():
-    file_handler = logging.FileHandler(LOG_FILE)
+def get_file_handler(logfile):
+    file_handler = logging.FileHandler(logfile)
     file_handler.setFormatter(Formatter)
 
     return file_handler
 
 
-def get_logger(logger_name):
+def get_logger(logger_name, logfile="app.log"):
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
 
-    logger.addHandler(get_file_handler())
+    logger.addHandler(get_file_handler(logfile))
     logger.addHandler(get_console_handler())
 
     # no propagating the error

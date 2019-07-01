@@ -1,0 +1,16 @@
+{
+    "campus":"iub",
+    "raw_data_dir": "../../data/raw_data/iu-bloomington/linkedIn/",
+    "processed_data_dir":"../../data/processed_data/iu-bloomington/linkedIn/",
+    "followers_file":"indiana-university-bloomington_followers.xls",
+    "engagements_file" :"indiana-university-bloomington_updates.xls",
+    "visitor_file": "indiana-university-bloomington_visitors.xls",
+    "output_file":"indiana-university_bl_linkedIn_data.xlsx",
+    "engagement_insights_sheetname":"engagement_insights",
+    "engagement_top_posts_sheetname":"top_engagement_posts",
+    "visitor_demographics_location_sheetname":"visitors_by_location",
+    "visitor_demographics_industry_sheetname":"visitors_by_industry",
+    "follower_demographics_location_sheetname":"followers_by_location",
+    "follower_demographics_industry_sheetname":"followers_by_industry",
+    "follower_demographics_seniority_sheetname":"followers_by_seniority"
+}

@@ -6,6 +6,10 @@ import math
 import pprint
 import sys
 import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
 import pandas as pd
 import tweepy
 from tweet_parser.tweet import Tweet as tweet_parser_tweet
@@ -23,7 +27,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from twitter_auth import twitter_oauth
-from twitter_logging import get_logger
+from app_logger import get_logger
 from tweet_sentiment import TweetSentiment
 
 from gnip_insights_interface.engagement_api import query_tweets, get_n_months_after_post
@@ -96,8 +100,7 @@ class TweetsAPI:
             csvWriter.writerow(["created",
 
                                 "text",
-                                "polarity",
-                                "subjectivity",
+                                "sentiment",
 
                                 "tweet_id",
                                 "truncated",
@@ -120,7 +123,7 @@ class TweetsAPI:
                                 "source",
                                 "lat",
                                 "long",
-                                "tweet_type"
+                                "tweet_type","words"
 
                                 ])
 
@@ -135,9 +138,8 @@ class TweetsAPI:
 
                 tweet_dec_text = tweet["text"].encode('ascii', errors='ignore')
 
-                sentiment_data,sentiment_data_words = self.sentiment_analyzer.get_tweet_sentiment_data(tweet["text"])
-                polarity = sentiment_data[0]
-                subjectivity = sentiment_data[1]
+                sentiment, tweet_tokens = self.sentiment_analyzer.get_tweet_sentiment_data(tweet["text"])
+
 
                 tweet_id = str(tweet["id_str"])
                 truncated = tweet["truncated"]
@@ -257,7 +259,7 @@ class TweetsAPI:
                     "retweet" if retweeted_status == "RETWEET" else "tweet")
 
                 csvWriter.writerow(
-                    [created_datetime, tweet["text"], polarity, subjectivity,
+                    [created_datetime, tweet["text"], sentiment,
                      tweet_id,
                      truncated,
                      user, user_followers_count, user_friends_count, user_favourites_count, user_statuses_count,
@@ -265,7 +267,7 @@ class TweetsAPI:
                      retweet_count, favorite_count, reply_count,
                      entities_mentions, entities_hashtags, entities_urls,
 
-                     source, lat, long, tweet_type])
+                     source, lat, long, tweet_type,tweet_tokens])
 
 
 

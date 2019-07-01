@@ -3,8 +3,8 @@
   "raw_data_dir": "../../data/raw_data/iu/twitter",
   "processed_data_dir": "../../data/processed_data/iu/twitter",
   "username": "@IndianaUniv",
-  "start_date": "2018-06-08",
-  "end_date": "2019-06-14",
+  "start_date": "2018-07-01",
+  "end_date": "2019-06-29",
   "user_timeline_results_filename": "iu_twitter_data.csv",
   "user_profile_results_filename": "iu_twitter_user_profile_data.csv"
 }
