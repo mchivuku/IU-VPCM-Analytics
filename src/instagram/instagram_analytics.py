@@ -24,6 +24,10 @@ class InstaAPI:
         if not os.path.exists(self.settings.raw_data_dir):
             os.makedirs(self.settings.raw_data_dir)
 
+        if not os.path.exists(self.settings.processed_data_dir):
+            os.makedirs(self.settings.processed_data_dir)
+
+
     def get_credentials_username_passwd(self, filename):
         with open(filename,'r') as f:
             lines = f.readlines()
