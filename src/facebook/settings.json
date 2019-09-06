@@ -1,0 +1,11 @@
+{
+  "raw_data_dir": "../../data/raw_data/iupui/facebook",
+  "processed_data_dir": "../../data/processed_data/iupui/facebook",
+  "username": "@IUPUI",
+  "start_date": "2018-07-01",
+  "end_date": "2019-06-29",
+  "auth_file": "credentials/auth_iupui.k",
+  "pageid":17389673405,
+  "full_name":"IUPUI",
+  "output_file":"iupui_facebook_data.xlsx"
+}
