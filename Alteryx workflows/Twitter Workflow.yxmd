@@ -1,0 +1,1629 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="570" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Manju\Documents\output\data\iu_twitter_data.xlsx|||twitter_data</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Output Data</Name>
+          <DefaultAnnotationText>iu_twitter_data.xlsx
+Table=twitter_data</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="474" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1770" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Manju\Documents\output\data\iu_twitter_data.xlsx|||most_freq_100_words</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>iu_twitter_data.xlsx
+Table=most_freq_100_words</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1518" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1770" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Manju\Documents\output\data\iu_twitter_data.xlsx|||most_freq_100_hashtags</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>iu_twitter_data.xlsx
+Table=most_freq_100_hashtags</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1530" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1782" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\Manju\Documents\output\data\iu_twitter_data.xlsx|||most_freq_100_mentions</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>iu_twitter_data.xlsx
+Table=most_freq_100_mentions</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1542" y="738" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29.99998" y="18.00002" width="395" height="423" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Twitter API - Read data from twitter</Caption>
+          <Style TextColor="#800000" FillColor="#f3f7b7" BorderColor="#000000" Transparency="25" Margin="60" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="306" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <productionModeScript><![CDATA[#################################
+# List all non-standard packages to be imported by your 
+# script here (only missing packages will be installed)
+from ayx import Package
+Package.installPackages(['pandas','numpy','tweepy','PrettyTable','nltk'])
+
+
+
+#################################
+
+#nltk.download('stopwords')
+
+
+#################################
+from ayx import Alteryx
+
+
+
+#################################
+import csv
+import json
+import math
+import pprint
+import sys
+import os
+import json
+from collections import namedtuple
+import re
+from textblob import TextBlob
+
+import pandas as pd
+import tweepy
+from datetime import datetime
+import time
+
+from pathlib import Path
+
+## Local files and imports
+from prettytable import unicode
+
+import re
+import string
+
+from textblob import TextBlob
+from textblob.sentiments import NaiveBayesAnalyzer
+
+import nltk
+
+
+from nltk.corpus import stopwords 
+stopwords_english = stopwords.words('english')
+
+from nltk.tokenize import TweetTokenizer 
+from nltk.stem import PorterStemmer
+from sklearn.externals import joblib
+stemmer = PorterStemmer()
+
+
+
+import warnings
+
+warnings.filterwarnings("ignore")
+
+
+
+
+#################################
+## Test 
+Alteryx.read("#settings")
+
+
+#################################
+def twitter_oauth(ak):
+    auth1 = tweepy.auth.OAuthHandler(ak.loc[0,'Field_1'].replace("\n", ""), ak.loc[1,'Field_1'].replace("\n", ""))
+    auth1.set_access_token(ak.loc[2,'Field_1'].replace("\n", ""), ak.loc[3,'Field_1'].replace("\n", ""))
+    return tweepy.API(auth1)
+
+
+
+
+
+#################################
+"""
+Read settings from input flow
+"""
+class Settings(object):
+    def __init__(self,input_data):
+        d = {}
+        for index, row in input_data.iterrows():
+            d[row["JSON_Name"]] =row["JSON_ValueString"]
+        self.__dict__.update(d)  
+        
+settings = Settings(Alteryx.read("#settings"))
+
+
+
+#################################
+import logging
+import sys
+
+from logging.handlers import TimedRotatingFileHandler
+
+Formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
+def get_console_handler():
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(Formatter)
+    return console_handler
+
+
+def get_file_handler(logfile):
+    file_handler = logging.FileHandler(logfile)
+    file_handler.setFormatter(Formatter)
+
+    return file_handler
+
+
+def get_logger(logger_name, logfile="app.log"):
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(logging.DEBUG)
+
+    logger.addHandler(get_file_handler(logfile))
+    logger.addHandler(get_console_handler())
+
+    # no propagating the error
+    logger.propagate = False
+
+    return logger
+
+
+#################################
+def to_str(bytes_or_str):
+    if isinstance(bytes_or_str, bytes):
+        value = bytes_or_str.decode() # uses 'utf-8' for encoding
+    else:
+        value = bytes_or_str
+    return value # Instance of str
+
+class TweetSentiment:
+    def __init__(self):
+
+        self.analysis = ""
+        
+        
+
+    @staticmethod
+    def clean_tweet(tweet_text):
+        """
+        1. remove retweet "RT"
+        2. remove hyperlinks
+        3. remove hashtags 
+        4. remove stopwords
+        5. remove emoticons 
+        6. remove punctuation, full-stop and comma, exclamation sign etc.
+        7. convert words to stem/base words using porter stemming algorithm
+        """
+        
+        tweet_text =  to_str(tweet_text)
+        
+        
+        # Happy Emoticons
+        emoticons_happy = set([':-)', ':)', ';)', ':o)', ':]', ':3', ':c)', ':>', '=]', '8)', '=)', ':}',
+                                    ':^)', ':-D', ':D', '8-D', '8D', 'x-D', 'xD', 'X-D', 'XD', '=-D', '=D',
+                                    '=-3', '=3', ':-))', ":'-)", ":')", ':*', ':^*', '>:P', ':-P', ':P', 'X-P',
+                                    'x-p', 'xp', 'XP', ':-p', ':p', '=p', ':-b', ':b', '>:)', '>;)', '>:-)',
+                                    '<3'])
+        # Sad Emoticons
+        emoticons_sad = set([':L', ':-/', '>:/', ':S', '>:[', ':@', ':-(', ':[', ':-||', '=L', ':<',
+                                  ':-[', ':-<', '=\\', '=/', '>:(', ':(', '>.<', ":'-(", ":'(", ':\\', ':-c',
+                                  ':c', ':{', '>:\\', ';('])
+        # all emoticons (happy + sad)
+        emoticons =  emoticons_happy.union(emoticons_sad)
+        
+        
+        
+        ## remove "RT"
+        tweet = re.sub(r'^RT[\s]+','',tweet_text)
+        
+        ## remove hyperlinks
+        tweet = re.sub(r'https?:\/\/.*[\r\n]*','',tweet)
+        
+        ## remove hashtags
+        tweet = re.sub(r'#\w*', '', tweet)
+
+        ## remove @ mentions
+        tweet = re.sub('@[^\s]+','',tweet)
+        
+        # Remove words with 2 or fewer letters
+        tweet = re.sub(r'\b\w{1,2}\b', '', tweet)
+
+        # Remove whitespace (including new line characters)
+        tweet = re.sub(r'\s\s+', ' ', tweet)
+        # Remove single space remaining at the front of the tweet.
+        tweet = tweet.lstrip(' ') 
+        # Remove characters beyond Basic Multilingual Plane (BMP) of Unicode:
+        tweet = ''.join(c for c in tweet if c <= '\uFFFF') 
+        ## tokenize tweets
+        # tokenize tweets
+        tokenizer = TweetTokenizer(preserve_case=False, strip_handles=True, reduce_len=True)
+        tweet_tokens = tokenizer.tokenize(tweet)
+        
+        tweets_clean = []    
+        for word in tweet_tokens:
+            if (word not in stopwords_english and # remove stopwords
+                word not in emoticons  and # remove emoticons
+                word not in string.punctuation): # remove punctuation
+                stem_word = stemmer.stem(word) # stemming word
+                tweets_clean.append(stem_word)
+                
+        return " ".join(tweets_clean), tweets_clean
+        
+    
+   
+    """
+    Get sentiment data
+    """
+    def get_tweet_sentiment_data(self,tweet):
+        text, words = self.clean_tweet(tweet)
+        analysis = TextBlob(text)
+        
+        polarity  = analysis.polarity
+        subjectivity = analysis.subjectivity
+        # formatting helper
+        ## 0 = negative, 2 = neutral, 4 = positive
+        if polarity < 0:
+            sentiment = "Negative"
+        elif polarity > 0 :
+            sentiment = "Positive"
+        else:
+            sentiment = "Neutral"
+        
+        print(text, sentiment)
+        return  sentiment, text
+
+
+
+#################################
+## Class contains various methods for getting tweets from twitter
+class TweetsAPI:
+
+    def __init__(self, settings, credentials, sentiment_analyzer=TweetSentiment):
+        """
+        init class
+        :param settings: settings object
+        """
+        self.settings = settings  ## read settings file
+        self.start_date = datetime.strptime(self.settings.start_date, '%Y-%m-%d')
+        self.end_date = datetime.strptime(self.settings.end_date, '%Y-%m-%d')
+        
+        self.username = self.settings.username
+
+        self.auth = twitter_oauth(credentials)
+        self.api = self.auth
+
+        self.logger = get_logger("TweetsAPI",logfile=self.settings.log_file)
+        self.sentiment_analyzer = sentiment_analyzer()
+
+        
+        ## Check if raw data folders exist, raw data dir
+        self.make_dir_not_exists(self.settings.raw_data_dir)
+        
+    def make_dir_not_exists(self, dirpath):
+
+        """
+        Dir path, make dir if it does not exist
+
+        """
+        dir_path = Path(dirpath)
+
+        if not dir_path.exists():
+            os.makedirs(dir_path)
+        else:
+            print("dir path exists: ")
+
+    """
+    Get tweets from user timeline
+    """
+
+    def get_user_timeline(self):
+        tweets = []
+
+        try:
+            self.logger.info("Downloading '" + self.username + "' timeline")
+
+            tmp_tweets = self.api.user_timeline(screen_name=self.username)
+            for tweet in tmp_tweets:
+                if tweet.created_at < self.end_date and tweet.created_at > self.start_date:
+                    tweets.append(tweet)
+
+            ## Keep fetching the tweets
+            while (tmp_tweets[-1].created_at > self.start_date):
+
+                self.logger.info("Last Tweet @" + str(tmp_tweets[-1].created_at) + " - fetching some more tweets")
+
+                tmp_tweets = self.api.user_timeline(self.username, max_id=tmp_tweets[-1].id)
+                for tweet in tmp_tweets:
+                    if tweet.created_at < self.end_date and tweet.created_at > self.start_date:
+                        tweets.append(tweet)
+
+            ## Make dir if it doesnt exist
+            self.make_dir_not_exists(self.settings.raw_data_dir)
+
+            csvFile = open(os.path.join(self.settings.raw_data_dir, self.settings.user_timeline_results_filename), "w")
+            csvWriter = csv.writer(csvFile)
+            csvWriter.writerow(["created",
+
+                                "text",
+                                "sentiment",
+
+                                "tweet_id",
+                                "truncated",
+                                "user",
+                                "user_followers_count",
+                                "user_friends_count",
+                                "user_favourites_count",
+                                "user_statuses_count",
+
+                                "retweeted_status",
+
+                                "retweet_count",
+                                "favorite_count",
+                                "reply_count",
+
+                                "at_mentions",
+                                "hashtags",
+                                "urls",
+
+                                "source",
+                                "lat",
+                                "long",
+                                "tweet_type","words"
+
+                                ])
+
+            ## save Tweets
+            output  = 
+            for tweet in tweets:
+                tweet = tweet._json
+
+                ##Sat Jun 08 20:43:04 +0000 2019
+                created_datetime = datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S +0000 %Y')
+                created_datetime_date = created_datetime.date()
+                created_datetime_time = created_datetime.time()
+
+                tweet_dec_text = tweet["text"].encode('ascii', errors='ignore')
+
+                sentiment, tweet_tokens = self.sentiment_analyzer.get_tweet_sentiment_data(tweet["text"].encode('ascii',errors="ignore"))
+
+
+                tweet_id = str(tweet["id_str"])
+                truncated = tweet["truncated"]
+
+                user = tweet["user"]["screen_name"]
+                user_followers_count = tweet["user"]["followers_count"]
+                user_friends_count = tweet["user"]["friends_count"]
+                user_favourites_count = tweet["user"]["favourites_count"]
+                user_statuses_count = tweet["user"]["statuses_count"]
+
+                if "retweeted_status" in tweet:
+                    retweeted_status = "RETWEET"
+
+                    retweeted_user = tweet['retweeted_status']['user']['id_str']
+                    retweeted_user_description = tweet['retweeted_status']['user']['description']
+                    retweeted_user_screen_name = tweet['retweeted_status']['user']['screen_name']
+                    retweeted_user_followers_count = tweet['retweeted_status']['user']['followers_count']
+                    retweeted_user_listed_count = tweet['retweeted_status']['user']['listed_count']
+                    retweeted_user_statuses_count = tweet['retweeted_status']['user']['statuses_count']
+                    retweeted_user_location = tweet['retweeted_status']['user']['location']
+                    retweeted_tweet_created_at_text = tweet['retweeted_status']['created_at']
+                    retweeted_tweet_created_at = datetime.strptime(retweeted_tweet_created_at_text,
+                                                                   '%a %b %d %H:%M:%S +0000 %Y')
+
+                else:
+                    retweeted_status = ""
+                    retweeted_user = ""
+                    retweeted_user_description = ""
+                    retweeted_user_screen_name = ""
+                    retweeted_user_followers_count = ""
+                    retweeted_user_listed_count = ""
+
+                    retweeted_user_statuses_count = ""
+                    retweeted_user_location = ""
+                    retweeted_tweet_created_at_text = ""
+                    retweeted_tweet_created_at = ""
+
+                words = tweet_dec_text.split()
+                num_words = len(words)
+
+                retweet_count = tweet['retweet_count']
+                favorite_count = tweet['favorite_count']
+
+                try:
+                    reply_count = tweet["reply_count"]
+                except:
+                    reply_count = 0
+
+                ## hashtags and urls, mentions
+                urls_count = len(tweet['entities']['urls'])
+                hashtags_count = len(tweet['entities']['hashtags'])
+                mentions_count = len(tweet['entities']['user_mentions'])
+                source = tweet['source']
+
+                ## expand entities to get urls, hashtags, and mentions
+                entities_urls, entities_expanded_urls, entities_hashtags, entities_mentions = [], [], [], []
+                for each in tweet['entities']['urls']:
+                    if 'url' in each:
+                        url = each["url"]
+                        expanded_url = each["expanded_url"]
+                        entities_urls.append(url)
+                        entities_expanded_urls.append(expanded_url)
+                    else:
+                        print("No urls")
+
+                for hashtag in tweet['entities']['hashtags']:
+                    if 'text' in hashtag:
+                        tag = hashtag['text']
+                        entities_hashtags.append(tag)
+                    else:
+                        print("No hashtags")
+
+                for at in tweet['entities']['user_mentions']:
+                    if 'screen_name' in at:
+                        mention = at['screen_name']
+                        entities_mentions.append(mention)
+                    else:
+                        print("No mentions")
+
+                entities_mentions = ", ".join(entities_mentions)
+                entities_hashtags = ", ".join(entities_hashtags)
+                entities_urls = ", ".join(entities_urls)
+                entities_expanded_urls = u", ".join(entities_expanded_urls)
+
+                video_link = 0
+                photo_link = 0
+                twitpic = 0
+
+                if "vimeo" in entities_expanded_urls or "youtube" in entities_urls or "youtu" in entities_expanded_urls or "vine" in entities_expanded_urls:
+                    video_link = 1
+
+                if 'twitpic' in entities_expanded_urls:
+                    twitpic = 1
+
+                if 'twitpic' in entities_expanded_urls or 'instagram' in entities_expanded_urls or 'instagr' in entities_expanded_urls:
+                    photo_link = 1
+
+                """entities_urls = unicode(entities_urls)
+                entities_expanded_urls = unicode(entities_expanded_urls)
+                entities_hashtags = unicode(entities_hashtags)
+                entities_mentions = unicode(entities_mentions)
+                """
+
+                if "media" in tweet["entities"]:
+                    entities_media_count = len(tweet["entities"]["media"])
+                else:
+                    entities_media_count = ''
+
+                try:
+                    lat = tweet["coordinates"]["coordinates"][0]
+                    long = tweet["coordinates"]["coordinates"][1]
+                except:
+                    lat = ""
+                    long = ""
+
+                tweet_type = "quote" if tweet["is_quote_status"] else (
+                    "retweet" if retweeted_status == "RETWEET" else "tweet")
+
+                csvWriter.writerow(
+                    [created_datetime, tweet_dec_text, sentiment,
+                     tweet_id,
+                     truncated,
+                     user, user_followers_count, user_friends_count, user_favourites_count, user_statuses_count,
+                     retweeted_status,
+                     retweet_count, favorite_count, reply_count,
+                     entities_mentions, entities_hashtags, entities_urls,
+
+                     source, lat, long, tweet_type,tweet_tokens])
+
+
+
+        except tweepy.TweepError as e:
+            if e.api_code == 429:
+                self.logger.error("[ERROR: TWEEPY API] Too many requests. Wait some minutes.")
+            else:
+                self.logger.error("[ERROR: TWEEPY API]")
+            sys.exit()
+        except Exception as e:
+            self.logger.error("[ERROR]: " + str(e))
+            sys.exit()
+
+   
+
+    """
+    Paginate for Cursor
+    """
+
+    def paginate(self, items, n):
+        for i in range(0, len(items), n):
+            yield items[i:i + n]
+
+    """
+    Get User profile, compute reach
+
+    """
+
+    def get_twitter_user_profile(self):
+        MAX_FRIENDS = 15000
+
+        client = self.api
+        profile = client.get_user(screen_name=self.settings.username)
+        user_profile = profile._json
+
+        self.logger.debug("Got user profile")
+
+        ## Make dir if it doesnt exist
+        self.make_dir_not_exists(self.settings.raw_data_dir)
+
+        max_pages = math.ceil(MAX_FRIENDS / 5000)
+        sum_reach = 0
+
+        for followers in tweepy.Cursor(client.followers_ids,
+                                       screen_name=self.settings.username).pages(max_pages):
+            for chunk in self.paginate(followers, 100):
+                users = client.lookup_users(user_ids=chunk)
+                for user in users:
+                    sum_reach += user._json["followers_count"]
+
+        self.logger.debug("total reach: " + str(sum_reach))
+        avg_followers = round(sum_reach / user_profile["followers_count"], 2)
+        self.logger.debug("Avg. followers:" + str(avg_followers))
+
+        csvFile = open(os.path.join(self.settings.raw_data_dir, self.settings.user_profile_results_filename), "w")
+        csvWriter = csv.writer(csvFile)
+
+        csvWriter.writerow(["user_id", "name", "screen_name", "followers_count", "friends_count",
+                            "favourites_count", "statuses_count", "total_reach", "avg_follower_cnt"])
+
+        csvWriter.writerow([user_profile["id_str"], user_profile["name"], user_profile["screen_name"],
+                            user_profile["followers_count"], user_profile["friends_count"],
+                            user_profile["favourites_count"],
+                            user_profile["statuses_count"],
+                            sum_reach, avg_followers])
+
+
+
+#################################
+credentials = Alteryx.read("#credentials")
+api = TweetsAPI(settings, credentials)
+
+
+#################################
+api.get_user_timeline()
+
+
+#################################
+print("Completed building usertimeline data")
+
+
+#################################
+api.get_twitter_user_profile()
+
+
+#################################
+print("Completed building user profile data")
+
+
+#################################
+
+]]></productionModeScript>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":"Run `Alteryx.help()` for info about useful functions.  \ni.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"},"trusted":false},"outputs":[],"source":"# List all non-standard packages to be imported by your \n# script here (only missing packages will be installed)\nfrom ayx import Package\n#Package.installPackages(['pandas','numpy','tweepy','PrettyTable','nltk'])\n"},{"cell_type":"code","execution_count":2,"metadata":{"trusted":false},"outputs":[],"source":"\n#nltk.download('stopwords')"},{"cell_type":"markdown","metadata":{},"source":"## Import Libraries"},{"cell_type":"code","execution_count":3,"metadata":{"trusted":false},"outputs":[],"source":"from ayx import Alteryx\n"},{"cell_type":"code","execution_count":4,"metadata":{"trusted":false},"outputs":[],"source":"import csv\nimport json\nimport math\nimport pprint\nimport sys\nimport os\nimport json\nfrom collections import namedtuple\nimport re\nfrom textblob import TextBlob\n\nimport pandas as pd\nimport tweepy\nfrom datetime import datetime\nimport time\n\nfrom pathlib import Path\n\n## Local files and imports\nfrom prettytable import unicode\n\nimport re\nimport string\n\nfrom textblob import TextBlob\nfrom textblob.sentiments import NaiveBayesAnalyzer\n\nimport nltk\n\n\nfrom nltk.corpus import stopwords \nstopwords_english = stopwords.words('english')\n\nfrom nltk.tokenize import TweetTokenizer \nfrom nltk.stem import PorterStemmer\nfrom sklearn.externals import joblib\nstemmer = PorterStemmer()\n\n\n\nimport warnings\n\nwarnings.filterwarnings(\"ignore\")\n\n"},{"cell_type":"code","execution_count":5,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: reading input data \"#settings\"\n"},{"data":{"text/html":"<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>JSON_Name</th>\n      <th>JSON_ValueString</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>raw_data_dir</td>\n      <td>data/raw_data/iu/twitter</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>processed_data_dir</td>\n      <td>data/processed_data/iu/twitter</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>username</td>\n      <td>@IndianaUniv</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>start_date</td>\n      <td>2019-07-31</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>end_date</td>\n      <td>2019-08-02</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>user_timeline_results_filename</td>\n      <td>iu_twitter_data.csv</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>user_profile_results_filename</td>\n      <td>iu_twitter_user_profile_data.csv</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>log_file</td>\n      <td>twitter_app.log</td>\n    </tr>\n  </tbody>\n</table>\n</div>","text/plain":"                        JSON_Name                  JSON_ValueString\n0                    raw_data_dir          data/raw_data/iu/twitter\n1              processed_data_dir    data/processed_data/iu/twitter\n2                        username                      @IndianaUniv\n3                      start_date                        2019-07-31\n4                        end_date                        2019-08-02\n5  user_timeline_results_filename               iu_twitter_data.csv\n6   user_profile_results_filename  iu_twitter_user_profile_data.csv\n7                        log_file                   twitter_app.log"},"execution_count":5,"metadata":{},"output_type":"execute_result"}],"source":"## Test \nAlteryx.read(\"#settings\")"},{"cell_type":"markdown","metadata":{},"source":"## Authorization Helper"},{"cell_type":"code","execution_count":6,"metadata":{"trusted":false},"outputs":[],"source":"def twitter_oauth(ak):\n    auth1 = tweepy.auth.OAuthHandler(ak.loc[0,'Field_1'].replace(\"\\n\", \"\"), ak.loc[1,'Field_1'].replace(\"\\n\", \"\"))\n    auth1.set_access_token(ak.loc[2,'Field_1'].replace(\"\\n\", \"\"), ak.loc[3,'Field_1'].replace(\"\\n\", \"\"))\n    return tweepy.API(auth1)\n\n\n"},{"cell_type":"markdown","metadata":{},"source":"## Settings Helper"},{"cell_type":"code","execution_count":7,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: reading input data \"#settings\"\n"}],"source":"\"\"\"\nRead settings from input flow\n\"\"\"\nclass Settings(object):\n    def __init__(self,input_data):\n        d = {}\n        for index, row in input_data.iterrows():\n            d[row[\"JSON_Name\"]] =row[\"JSON_ValueString\"]\n        self.__dict__.update(d)  \n        \nsettings = Settings(Alteryx.read(\"#settings\"))\n"},{"cell_type":"markdown","metadata":{},"source":"## Logging"},{"cell_type":"code","execution_count":8,"metadata":{"trusted":false},"outputs":[],"source":"import logging\nimport sys\n\nfrom logging.handlers import TimedRotatingFileHandler\n\nFormatter = logging.Formatter(\"%(asctime)s - %(name)s - %(levelname)s - %(message)s\")\n\ndef get_console_handler():\n    console_handler = logging.StreamHandler(sys.stdout)\n    console_handler.setFormatter(Formatter)\n    return console_handler\n\n\ndef get_file_handler(logfile):\n    file_handler = logging.FileHandler(logfile)\n    file_handler.setFormatter(Formatter)\n\n    return file_handler\n\n\ndef get_logger(logger_name, logfile=\"app.log\"):\n    logger = logging.getLogger(logger_name)\n    logger.setLevel(logging.DEBUG)\n\n    logger.addHandler(get_file_handler(logfile))\n    logger.addHandler(get_console_handler())\n\n    # no propagating the error\n    logger.propagate = False\n\n    return logger"},{"cell_type":"markdown","metadata":{},"source":"## Twitter Sentiment"},{"cell_type":"code","execution_count":9,"metadata":{"trusted":false},"outputs":[],"source":"def to_str(bytes_or_str):\n    if isinstance(bytes_or_str, bytes):\n        value = bytes_or_str.decode() # uses 'utf-8' for encoding\n    else:\n        value = bytes_or_str\n    return value # Instance of str\n\nclass TweetSentiment:\n    def __init__(self):\n\n        self.analysis = \"\"\n        \n        \n\n    @staticmethod\n    def clean_tweet(tweet_text):\n        \"\"\"\n        1. remove retweet \"RT\"\n        2. remove hyperlinks\n        3. remove hashtags \n        4. remove stopwords\n        5. remove emoticons \n        6. remove punctuation, full-stop and comma, exclamation sign etc.\n        7. convert words to stem/base words using porter stemming algorithm\n        \"\"\"\n        \n        tweet_text =  to_str(tweet_text)\n        \n        \n        # Happy Emoticons\n        emoticons_happy = set([':-)', ':)', ';)', ':o)', ':]', ':3', ':c)', ':>', '=]', '8)', '=)', ':}',\n                                    ':^)', ':-D', ':D', '8-D', '8D', 'x-D', 'xD', 'X-D', 'XD', '=-D', '=D',\n                                    '=-3', '=3', ':-))', \":'-)\", \":')\", ':*', ':^*', '>:P', ':-P', ':P', 'X-P',\n                                    'x-p', 'xp', 'XP', ':-p', ':p', '=p', ':-b', ':b', '>:)', '>;)', '>:-)',\n                                    '<3'])\n        # Sad Emoticons\n        emoticons_sad = set([':L', ':-/', '>:/', ':S', '>:[', ':@', ':-(', ':[', ':-||', '=L', ':<',\n                                  ':-[', ':-<', '=\\\\', '=/', '>:(', ':(', '>.<', \":'-(\", \":'(\", ':\\\\', ':-c',\n                                  ':c', ':{', '>:\\\\', ';('])\n        # all emoticons (happy + sad)\n        emoticons =  emoticons_happy.union(emoticons_sad)\n        \n        \n        \n        ## remove \"RT\"\n        tweet = re.sub(r'^RT[\\s]+','',tweet_text)\n        \n        ## remove hyperlinks\n        tweet = re.sub(r'https?:\\/\\/.*[\\r\\n]*','',tweet)\n        \n        ## remove hashtags\n        tweet = re.sub(r'#\\w*', '', tweet)\n\n        ## remove @ mentions\n        tweet = re.sub('@[^\\s]+','',tweet)\n        \n        # Remove words with 2 or fewer letters\n        tweet = re.sub(r'\\b\\w{1,2}\\b', '', tweet)\n\n        # Remove whitespace (including new line characters)\n        tweet = re.sub(r'\\s\\s+', ' ', tweet)\n        # Remove single space remaining at the front of the tweet.\n        tweet = tweet.lstrip(' ') \n        # Remove characters beyond Basic Multilingual Plane (BMP) of Unicode:\n        tweet = ''.join(c for c in tweet if c <= '\\uFFFF') \n        ## tokenize tweets\n        # tokenize tweets\n        tokenizer = TweetTokenizer(preserve_case=False, strip_handles=True, reduce_len=True)\n        tweet_tokens = tokenizer.tokenize(tweet)\n        \n        tweets_clean = []    \n        for word in tweet_tokens:\n            if (word not in stopwords_english and # remove stopwords\n                word not in emoticons  and # remove emoticons\n                word not in string.punctuation): # remove punctuation\n                stem_word = stemmer.stem(word) # stemming word\n                tweets_clean.append(stem_word)\n                \n        return \" \".join(tweets_clean), tweets_clean\n        \n    \n   \n    \"\"\"\n    Get sentiment data\n    \"\"\"\n    def get_tweet_sentiment_data(self,tweet):\n        text, words = self.clean_tweet(tweet)\n        analysis = TextBlob(text)\n        \n        polarity  = analysis.polarity\n        subjectivity = analysis.subjectivity\n        # formatting helper\n        ## 0 = negative, 2 = neutral, 4 = positive\n        if polarity < 0:\n            sentiment = \"Negative\"\n        elif polarity > 0 :\n            sentiment = \"Positive\"\n        else:\n            sentiment = \"Neutral\"\n        \n        print(text, sentiment)\n        return  sentiment, text\n"},{"cell_type":"markdown","metadata":{},"source":"## Twitter Analytics "},{"cell_type":"code","execution_count":10,"metadata":{"trusted":false},"outputs":[],"source":"## Class contains various methods for getting tweets from twitter\nclass TweetsAPI:\n\n    def __init__(self, settings, credentials, sentiment_analyzer=TweetSentiment):\n        \"\"\"\n        init class\n        :param settings: settings object\n        \"\"\"\n        self.settings = settings  ## read settings file\n        self.start_date = datetime.strptime(self.settings.start_date, '%Y-%m-%d')\n        self.end_date = datetime.strptime(self.settings.end_date, '%Y-%m-%d')\n        \n        self.username = self.settings.username\n\n        self.auth = twitter_oauth(credentials)\n        self.api = self.auth\n\n        self.logger = get_logger(\"TweetsAPI\",logfile=self.settings.log_file)\n        self.sentiment_analyzer = sentiment_analyzer()\n\n        \n        ## Check if raw data folders exist, raw data dir\n        self.make_dir_not_exists(self.settings.raw_data_dir)\n        \n    def make_dir_not_exists(self, dirpath):\n\n        \"\"\"\n        Dir path, make dir if it does not exist\n\n        \"\"\"\n        dir_path = Path(dirpath)\n\n        if not dir_path.exists():\n            os.makedirs(dir_path)\n        else:\n            print(\"dir path exists: \")\n\n    \"\"\"\n    Get tweets from user timeline\n    \"\"\"\n\n    def get_user_timeline(self):\n        tweets = []\n\n        try:\n            self.logger.info(\"Downloading '\" + self.username + \"' timeline\")\n\n            tmp_tweets = self.api.user_timeline(screen_name=self.username)\n            for tweet in tmp_tweets:\n                if tweet.created_at < self.end_date and tweet.created_at > self.start_date:\n                    tweets.append(tweet)\n\n            ## Keep fetching the tweets\n            while (tmp_tweets[-1].created_at > self.start_date):\n\n                self.logger.info(\"Last Tweet @\" + str(tmp_tweets[-1].created_at) + \" - fetching some more tweets\")\n\n                tmp_tweets = self.api.user_timeline(self.username, max_id=tmp_tweets[-1].id)\n                for tweet in tmp_tweets:\n                    if tweet.created_at < self.end_date and tweet.created_at > self.start_date:\n                        tweets.append(tweet)\n\n            \n            ## Make dir if it doesnt exist\n            self.make_dir_not_exists(self.settings.raw_data_dir)\n            timeline_data = []\n\n            csvFile = open(os.path.join(self.settings.raw_data_dir, self.settings.user_timeline_results_filename), \"w\")\n            csvWriter = csv.writer(csvFile)\n            \n            columns = [\"created\",\n\n                                \"text\",\n                                \"sentiment\",\n\n                                \"tweet_id\",\n                                \"truncated\",\n                                \"user\",\n                                \"user_followers_count\",\n                                \"user_friends_count\",\n                                \"user_favourites_count\",\n                                \"user_statuses_count\",\n\n                                \"retweeted_status\",\n\n                                \"retweet_count\",\n                                \"favorite_count\",\n                                \"reply_count\",\n\n                                \"at_mentions\",\n                                \"hashtags\",\n                                \"urls\",\n\n                                \"source\",\n                                \"lat\",\n                                \"long\",\n                                \"tweet_type\",\"words\"\n\n                                ]\n            csvWriter.writerow(columns)\n\n            ## save Tweets\n            \n            for tweet in tweets:\n                tweet = tweet._json\n\n                ##Sat Jun 08 20:43:04 +0000 2019\n                created_datetime = datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S +0000 %Y')\n                created_datetime_date = created_datetime.date()\n                created_datetime_time = created_datetime.time()\n\n                tweet_dec_text = tweet[\"text\"].encode('ascii', errors='ignore')\n\n                sentiment, tweet_tokens = self.sentiment_analyzer.get_tweet_sentiment_data(tweet[\"text\"].encode('ascii',errors=\"ignore\"))\n\n\n                tweet_id = str(tweet[\"id_str\"])\n                truncated = 0 if tweet[\"truncated\"] else 1\n\n                user = tweet[\"user\"][\"screen_name\"]\n                user_followers_count = tweet[\"user\"][\"followers_count\"]\n                user_friends_count = tweet[\"user\"][\"friends_count\"]\n                user_favourites_count = tweet[\"user\"][\"favourites_count\"]\n                user_statuses_count = tweet[\"user\"][\"statuses_count\"]\n\n                if \"retweeted_status\" in tweet:\n                    retweeted_status = \"RETWEET\"\n\n                    retweeted_user = tweet['retweeted_status']['user']['id_str']\n                    retweeted_user_description = tweet['retweeted_status']['user']['description']\n                    retweeted_user_screen_name = tweet['retweeted_status']['user']['screen_name']\n                    retweeted_user_followers_count = tweet['retweeted_status']['user']['followers_count']\n                    retweeted_user_listed_count = tweet['retweeted_status']['user']['listed_count']\n                    retweeted_user_statuses_count = tweet['retweeted_status']['user']['statuses_count']\n                    retweeted_user_location = tweet['retweeted_status']['user']['location']\n                    retweeted_tweet_created_at_text = tweet['retweeted_status']['created_at']\n                    retweeted_tweet_created_at = datetime.strptime(retweeted_tweet_created_at_text,\n                                                                   '%a %b %d %H:%M:%S +0000 %Y')\n\n                else:\n                    retweeted_status = \"\"\n                    retweeted_user = \"\"\n                    retweeted_user_description = \"\"\n                    retweeted_user_screen_name = \"\"\n                    retweeted_user_followers_count = \"\"\n                    retweeted_user_listed_count = \"\"\n\n                    retweeted_user_statuses_count = \"\"\n                    retweeted_user_location = \"\"\n                    retweeted_tweet_created_at_text = \"\"\n                    retweeted_tweet_created_at = \"\"\n\n                words = tweet_dec_text.split()\n                num_words = len(words)\n\n                retweet_count = tweet['retweet_count']\n                favorite_count = tweet['favorite_count']\n\n                try:\n                    reply_count = tweet[\"reply_count\"]\n                except:\n                    reply_count = 0\n\n                ## hashtags and urls, mentions\n                urls_count = len(tweet['entities']['urls'])\n                hashtags_count = len(tweet['entities']['hashtags'])\n                mentions_count = len(tweet['entities']['user_mentions'])\n                source = tweet['source']\n\n                ## expand entities to get urls, hashtags, and mentions\n                entities_urls, entities_expanded_urls, entities_hashtags, entities_mentions = [], [], [], []\n                for each in tweet['entities']['urls']:\n                    if 'url' in each:\n                        url = each[\"url\"]\n                        expanded_url = each[\"expanded_url\"]\n                        entities_urls.append(url)\n                        entities_expanded_urls.append(expanded_url)\n                    else:\n                        print(\"No urls\")\n\n                for hashtag in tweet['entities']['hashtags']:\n                    if 'text' in hashtag:\n                        tag = hashtag['text']\n                        entities_hashtags.append(tag)\n                    else:\n                        print(\"No hashtags\")\n\n                for at in tweet['entities']['user_mentions']:\n                    if 'screen_name' in at:\n                        mention = at['screen_name']\n                        entities_mentions.append(mention)\n                    else:\n                        print(\"No mentions\")\n\n                entities_mentions = \", \".join(entities_mentions)\n                entities_hashtags = \", \".join(entities_hashtags)\n                entities_urls = \", \".join(entities_urls)\n                entities_expanded_urls = u\", \".join(entities_expanded_urls)\n\n                video_link = 0\n                photo_link = 0\n                twitpic = 0\n\n                if \"vimeo\" in entities_expanded_urls or \"youtube\" in entities_urls or \"youtu\" in entities_expanded_urls or \"vine\" in entities_expanded_urls:\n                    video_link = 1\n\n                if 'twitpic' in entities_expanded_urls:\n                    twitpic = 1\n\n                if 'twitpic' in entities_expanded_urls or 'instagram' in entities_expanded_urls or 'instagr' in entities_expanded_urls:\n                    photo_link = 1\n\n                \"\"\"entities_urls = unicode(entities_urls)\n                entities_expanded_urls = unicode(entities_expanded_urls)\n                entities_hashtags = unicode(entities_hashtags)\n                entities_mentions = unicode(entities_mentions)\n                \"\"\"\n\n                if \"media\" in tweet[\"entities\"]:\n                    entities_media_count = len(tweet[\"entities\"][\"media\"])\n                else:\n                    entities_media_count = ''\n\n                try:\n                    lat = tweet[\"coordinates\"][\"coordinates\"][0]\n                    long = tweet[\"coordinates\"][\"coordinates\"][1]\n                except:\n                    lat = \"\"\n                    long = \"\"\n\n                tweet_type = \"quote\" if tweet[\"is_quote_status\"] else (\n                    \"retweet\" if retweeted_status == \"RETWEET\" else \"tweet\")\n                \n                datarow = [created_datetime, tweet_dec_text, sentiment,\n                     tweet_id,\n                     truncated,\n                     user, user_followers_count, user_friends_count, user_favourites_count, user_statuses_count,\n                     retweeted_status,\n                     retweet_count, favorite_count, reply_count,\n                     entities_mentions, entities_hashtags, entities_urls,\n\n                     source, lat, long, tweet_type,tweet_tokens]\n                csvWriter.writerow(datarow)\n\n                timeline_data.append(datarow)\n                \n                \n\n        except tweepy.TweepError as e:\n            if e.api_code == 429:\n                self.logger.error(\"[ERROR: TWEEPY API] Too many requests. Wait some minutes.\")\n            else:\n                self.logger.error(\"[ERROR: TWEEPY API]\",str(e))\n            sys.exit()\n        except Exception as e:\n            self.logger.error(\"[ERROR]: \" + str(e))\n            sys.exit()\n\n        return timeline_data, columns\n\n    \"\"\"\n    Paginate for Cursor\n    \"\"\"\n\n    def paginate(self, items, n):\n        for i in range(0, len(items), n):\n            yield items[i:i + n]\n\n    \"\"\"\n    Get User profile, compute reach\n\n    \"\"\"\n\n    def get_twitter_user_profile(self):\n        MAX_FRIENDS = 15000\n\n        client = self.api\n        profile = client.get_user(screen_name=self.settings.username)\n        user_profile = profile._json\n\n        self.logger.debug(\"Got user profile\")\n\n        ## Make dir if it doesnt exist\n        self.make_dir_not_exists(self.settings.raw_data_dir)\n\n        max_pages = math.ceil(MAX_FRIENDS / 5000)\n        sum_reach = 0\n        profile_data = []\n        \n        for followers in tweepy.Cursor(client.followers_ids,\n                                       screen_name=self.settings.username).pages(max_pages):\n            for chunk in self.paginate(followers, 100):\n                users = client.lookup_users(user_ids=chunk)\n                for user in users:\n                    sum_reach += user._json[\"followers_count\"]\n\n        self.logger.debug(\"total reach: \" + str(sum_reach))\n        avg_followers = round(sum_reach / user_profile[\"followers_count\"], 2)\n        self.logger.debug(\"Avg. followers:\" + str(avg_followers))\n\n        csvFile = open(os.path.join(self.settings.raw_data_dir, self.settings.user_profile_results_filename), \"w\")\n        csvWriter = csv.writer(csvFile)\n        columns = [\"user_id\", \"name\", \"screen_name\", \"followers_count\", \"friends_count\",\n                            \"favourites_count\", \"statuses_count\", \"total_reach\", \"avg_follower_cnt\"]\n        csvWriter.writerow(columns)\n        \n        \n        data = [user_profile[\"id_str\"], user_profile[\"name\"], user_profile[\"screen_name\"],\n                            user_profile[\"followers_count\"], user_profile[\"friends_count\"],\n                            user_profile[\"favourites_count\"],\n                            user_profile[\"statuses_count\"],\n                            sum_reach, avg_followers]\n        profile_data.append(data)\n        csvWriter.writerow(data)\n        \n        return profile_data, columns\n"},{"cell_type":"markdown","metadata":{},"source":"\n## Get Data\n\n<ul>\n    <li> Timeline scrapper </li>\n    <li> User profile and follower network </li>\n    \n</ul>\n"},{"cell_type":"markdown","metadata":{},"source":"### Timeline Scrapper"},{"cell_type":"code","execution_count":11,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: reading input data \"#credentials\"\ndir path exists: \n"}],"source":"credentials = Alteryx.read(\"#credentials\")\napi = TweetsAPI(settings, credentials)"},{"cell_type":"code","execution_count":12,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"2019-08-05 10:04:21,785 - TweetsAPI - INFO - Downloading '@IndianaUniv' timeline\ndir path exists: \ngood luck rob thank done Positive\nlearn research partnership led first-ev map hierarch network connect econ Neutral\nexcit contribut presid mcrobbi make major issu concern new Positive\nseen incred achiev first 200 year . . . imagin third centuri Positive\ncybersecur expert share tip Neutral\n200 year-old chocol tast like pretti good happi earli birthday Positive\n"}],"source":"(timeline_data, columns) = api.get_user_timeline()"},{"cell_type":"code","execution_count":13,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"Completed building usertimeline data\n"},{"data":{"text/plain":"created                  datetime64[ns]\ntext                             object\nsentiment                        object\ntweet_id                         object\ntruncated                         int64\nuser                             object\nuser_followers_count              int64\nuser_friends_count                int64\nuser_favourites_count             int64\nuser_statuses_count               int64\nretweeted_status                 object\nretweet_count                     int64\nfavorite_count                    int64\nreply_count                       int64\nat_mentions                      object\nhashtags                         object\nurls                             object\nsource                           object\nlat                              object\nlong                             object\ntweet_type                       object\nwords                            object\ndtype: object"},"execution_count":13,"metadata":{},"output_type":"execute_result"}],"source":"print(\"Completed building usertimeline data\")\n\ntimeline_df = pd.DataFrame(data= timeline_data, columns = columns)\ntimeline_df.dtypes\n"},{"cell_type":"markdown","metadata":{},"source":"## User profile Scrapper"},{"cell_type":"code","execution_count":14,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: writing outgoing connection data 1\n"},{"data":{"text/html":"<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>created</th>\n      <th>text</th>\n      <th>sentiment</th>\n      <th>tweet_id</th>\n      <th>truncated</th>\n      <th>user</th>\n      <th>user_followers_count</th>\n      <th>user_friends_count</th>\n      <th>user_favourites_count</th>\n      <th>user_statuses_count</th>\n      <th>...</th>\n      <th>favorite_count</th>\n      <th>reply_count</th>\n      <th>at_mentions</th>\n      <th>hashtags</th>\n      <th>urls</th>\n      <th>source</th>\n      <th>lat</th>\n      <th>long</th>\n      <th>tweet_type</th>\n      <th>words</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>2019-08-01 20:15:26</td>\n      <td>b\"@robzinkan @rhbinformed Good luck, Rob and t...</td>\n      <td>Positive</td>\n      <td>1157022045605117952</td>\n      <td>1</td>\n      <td>IndianaUniv</td>\n      <td>74928</td>\n      <td>450</td>\n      <td>5137</td>\n      <td>18059</td>\n      <td>...</td>\n      <td>5</td>\n      <td>0</td>\n      <td>robzinkan, rhbinformed</td>\n      <td></td>\n      <td></td>\n      <td>&lt;a href=\"https://sproutsocial.com\" rel=\"nofoll...</td>\n      <td></td>\n      <td></td>\n      <td>tweet</td>\n      <td>good luck rob thank done</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>2019-08-01 18:43:51</td>\n      <td>b'RT @LinkedInEng: Learn how our research part...</td>\n      <td>Neutral</td>\n      <td>1156998996352741377</td>\n      <td>1</td>\n      <td>IndianaUniv</td>\n      <td>74928</td>\n      <td>450</td>\n      <td>5137</td>\n      <td>18059</td>\n      <td>...</td>\n      <td>0</td>\n      <td>0</td>\n      <td>LinkedInEng, IndianaUniv</td>\n      <td></td>\n      <td></td>\n      <td>&lt;a href=\"https://sproutsocial.com\" rel=\"nofoll...</td>\n      <td></td>\n      <td></td>\n      <td>retweet</td>\n      <td>learn research partnership led first-ev map hi...</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>2019-08-01 15:22:16</td>\n      <td>b'RT @rpiurek: Excited for the contributions @...</td>\n      <td>Positive</td>\n      <td>1156948266275213313</td>\n      <td>1</td>\n      <td>IndianaUniv</td>\n      <td>74928</td>\n      <td>450</td>\n      <td>5137</td>\n      <td>18059</td>\n      <td>...</td>\n      <td>0</td>\n      <td>0</td>\n      <td>rpiurek, IndianaUniv</td>\n      <td>highereducation</td>\n      <td></td>\n      <td>&lt;a href=\"https://sproutsocial.com\" rel=\"nofoll...</td>\n      <td></td>\n      <td></td>\n      <td>retweet</td>\n      <td>excit contribut presid mcrobbi make major issu...</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>2019-07-31 19:46:33</td>\n      <td>b\"RT @IUFoundation: We've seen incredible achi...</td>\n      <td>Positive</td>\n      <td>1156652386309562370</td>\n      <td>1</td>\n      <td>IndianaUniv</td>\n      <td>74928</td>\n      <td>450</td>\n      <td>5137</td>\n      <td>18059</td>\n      <td>...</td>\n      <td>0</td>\n      <td>0</td>\n      <td>IUFoundation, IndianaUniv</td>\n      <td></td>\n      <td></td>\n      <td>&lt;a href=\"https://sproutsocial.com\" rel=\"nofoll...</td>\n      <td></td>\n      <td></td>\n      <td>retweet</td>\n      <td>seen incred achiev first 200 year . . . imagin...</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>2019-07-31 14:55:50</td>\n      <td>b\"RT @IUImpact: .@IndianaUniv VP for #IUResear...</td>\n      <td>Neutral</td>\n      <td>1156579227153698816</td>\n      <td>1</td>\n      <td>IndianaUniv</td>\n      <td>74928</td>\n      <td>450</td>\n      <td>5137</td>\n      <td>18059</td>\n      <td>...</td>\n      <td>0</td>\n      <td>0</td>\n      <td>IUImpact, IndianaUniv, FredHCate, YahooFinance</td>\n      <td>IUResearch</td>\n      <td></td>\n      <td>&lt;a href=\"https://sproutsocial.com\" rel=\"nofoll...</td>\n      <td></td>\n      <td></td>\n      <td>retweet</td>\n      <td>cybersecur expert share tip</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>2019-07-31 13:43:24</td>\n      <td>b'RT @kennysmith: What does 200-year-old choco...</td>\n      <td>Positive</td>\n      <td>1156560998976884741</td>\n      <td>1</td>\n      <td>IndianaUniv</td>\n      <td>74928</td>\n      <td>450</td>\n      <td>5137</td>\n      <td>18059</td>\n      <td>...</td>\n      <td>0</td>\n      <td>0</td>\n      <td>kennysmith, IndianaUniv, IUBloomington</td>\n      <td></td>\n      <td></td>\n      <td>&lt;a href=\"https://sproutsocial.com\" rel=\"nofoll...</td>\n      <td></td>\n      <td></td>\n      <td>retweet</td>\n      <td>200 year-old chocol tast like pretti good happ...</td>\n    </tr>\n  </tbody>\n</table>\n<p>6 rows × 22 columns</p>\n</div>","text/plain":"              created                                               text  \\\n0 2019-08-01 20:15:26  b\"@robzinkan @rhbinformed Good luck, Rob and t...   \n1 2019-08-01 18:43:51  b'RT @LinkedInEng: Learn how our research part...   \n2 2019-08-01 15:22:16  b'RT @rpiurek: Excited for the contributions @...   \n3 2019-07-31 19:46:33  b\"RT @IUFoundation: We've seen incredible achi...   \n4 2019-07-31 14:55:50  b\"RT @IUImpact: .@IndianaUniv VP for #IUResear...   \n5 2019-07-31 13:43:24  b'RT @kennysmith: What does 200-year-old choco...   \n\n  sentiment             tweet_id  truncated         user  \\\n0  Positive  1157022045605117952          1  IndianaUniv   \n1   Neutral  1156998996352741377          1  IndianaUniv   \n2  Positive  1156948266275213313          1  IndianaUniv   \n3  Positive  1156652386309562370          1  IndianaUniv   \n4   Neutral  1156579227153698816          1  IndianaUniv   \n5  Positive  1156560998976884741          1  IndianaUniv   \n\n   user_followers_count  user_friends_count  user_favourites_count  \\\n0                 74928                 450                   5137   \n1                 74928                 450                   5137   \n2                 74928                 450                   5137   \n3                 74928                 450                   5137   \n4                 74928                 450                   5137   \n5                 74928                 450                   5137   \n\n   user_statuses_count  ... favorite_count  reply_count  \\\n0                18059  ...              5            0   \n1                18059  ...              0            0   \n2                18059  ...              0            0   \n3                18059  ...              0            0   \n4                18059  ...              0            0   \n5                18059  ...              0            0   \n\n                                      at_mentions         hashtags urls  \\\n0                          robzinkan, rhbinformed                         \n1                        LinkedInEng, IndianaUniv                         \n2                            rpiurek, IndianaUniv  highereducation        \n3                       IUFoundation, IndianaUniv                         \n4  IUImpact, IndianaUniv, FredHCate, YahooFinance       IUResearch        \n5          kennysmith, IndianaUniv, IUBloomington                         \n\n                                              source lat long tweet_type  \\\n0  <a href=\"https://sproutsocial.com\" rel=\"nofoll...               tweet   \n1  <a href=\"https://sproutsocial.com\" rel=\"nofoll...             retweet   \n2  <a href=\"https://sproutsocial.com\" rel=\"nofoll...             retweet   \n3  <a href=\"https://sproutsocial.com\" rel=\"nofoll...             retweet   \n4  <a href=\"https://sproutsocial.com\" rel=\"nofoll...             retweet   \n5  <a href=\"https://sproutsocial.com\" rel=\"nofoll...             retweet   \n\n                                               words  \n0                           good luck rob thank done  \n1  learn research partnership led first-ev map hi...  \n2  excit contribut presid mcrobbi make major issu...  \n3  seen incred achiev first 200 year . . . imagin...  \n4                        cybersecur expert share tip  \n5  200 year-old chocol tast like pretti good happ...  \n\n[6 rows x 22 columns]"},"execution_count":14,"metadata":{},"output_type":"execute_result"}],"source":"#userprofile_data, columns = api.get_twitter_user_profile()\nAlteryx.write(timeline_df,1)"},{"cell_type":"code","execution_count":15,"metadata":{"trusted":false},"outputs":[{"name":"stdout","output_type":"stream","text":"Completed building user profile data\n"}],"source":"print(\"Completed building user profile data\")"},{"cell_type":"code","execution_count":16,"metadata":{"trusted":false},"outputs":[],"source":"#profile_df = pd.DataFrame(data= userprofile_data, columns = columns)\n#Alteryx.write(profile_df,2)"},{"cell_type":"markdown","metadata":{},"source":"## Write Output"},{"cell_type":"code","execution_count":null,"metadata":{"trusted":false},"outputs":[],"source":"\n\n"},{"cell_type":"code","execution_count":null,"metadata":{"trusted":false},"outputs":[],"source":""}],"metadata":{"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.6.0"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+              <Port>55312</Port>
+              <WorkflowName>c:\users\manju\documents\social media dashboards\twitter workflow.yxmd</WorkflowName>
+              <specialCellMetadata>[{"label":"info","contents_keyword":"Alteryx.help()","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","first_line":"Run `Alteryx.help()` for info about useful functions.","cell_type":"markdown","cell_class":"text_cell"},{"label":"deps","contents_keyword":"installPackages","cell_css":"border: 1px solid #58a; margin: 2px;","first_line":"# List all non-standard packages to be imported by your","cell_type":"code","cell_class":"code_cell"}]</specialCellMetadata>
+              <AssetManaged>True</AssetManaged>
+              <JupyterProduction>False</JupyterProduction>
+              <SqliteOverride>false</SqliteOverride>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="created" source="PythonTool:" type="DateTime" />
+                <Field name="text" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="sentiment" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="tweet_id" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="truncated" source="PythonTool:" type="Int64" />
+                <Field name="user" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="user_followers_count" source="PythonTool:" type="Int64" />
+                <Field name="user_friends_count" source="PythonTool:" type="Int64" />
+                <Field name="user_favourites_count" source="PythonTool:" type="Int64" />
+                <Field name="user_statuses_count" source="PythonTool:" type="Int64" />
+                <Field name="retweeted_status" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="retweet_count" source="PythonTool:" type="Int64" />
+                <Field name="favorite_count" source="PythonTool:" type="Int64" />
+                <Field name="reply_count" source="PythonTool:" type="Int64" />
+                <Field name="at_mentions" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="hashtags" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="urls" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="source" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="lat" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="long" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="tweet_type" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="words" size="1073741823" source="PythonTool:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="89.99998" y="305.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="54">C:\Users\Manju\Documents\Social Media Dashboards\social-media-analytics\src\twitter\settings.json</File>
+              <FormatSpecificOptions>
+                <SingleField>True</SingleField>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>settings.json</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="89.99998" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Manju\Documents\Social Media Dashboards\credentials\twitter\auth_iu.txt</File>
+              <FormatSpecificOptions>
+                <CodePage>65001</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>auth_iu.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: C:\Users\Manju\Documents\Social Media Dashboards\credentials\twitter\auth_iu.txt" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="462" y="222" width="1008" height="669" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Text Analysis: Word Frequency, Hashtag Frequency, Mentions Frequency</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="497.9999" y="498.9999" width="372" height="168" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Stop words to exclude - nltk.stopwords</Text>
+              <Font name="Segoe UI" size="9.75" style="1" />
+              <TextColor name="Black" />
+              <FillColor r="250" g="156" b="180" />
+              <Shape shape="0" />
+              <Justification Justification="3" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="905.9999" y="511" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([Words]) &gt; 3 and  StartsWith([Words], '@') and not StartsWith([Words], '#')</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-08-05 07:34:28</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-08-05 07:34:28</StartDate>
+                  <EndDate>2019-08-05 07:34:28</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Length([Words]) &gt; 3 and  StartsWith([Words], '@') and not StartsWith([Words], '#...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1134" y="703" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="1230" y="703" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>100</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1350" y="703" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="TitleCase([screen_name])" field="screen_name" size="64" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[screen_name = TitleCase([screen_name])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1026" y="499" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Words" action="GroupBy" rename="hashtag" />
+                <SummarizeField field="Words" action="Count" rename="count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1122" y="499" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="1218" y="499" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>100</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1338" y="499" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="TitleCase([hashtag])" field="hashtag" size="64" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[hashtag = TitleCase([hashtag])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="558.9999" y="356.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>text</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>
+              </RootName>
+              <Delimeters value=" " />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="893.9999" y="331" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([Words]) &gt; 3 and not StartsWith([Words], '@') and not StartsWith([Words], '#')</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-08-02 13:29:16</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-08-02 13:29:16</StartDate>
+                  <EndDate>2019-08-02 13:29:16</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Length([Words]) &gt; 3 and not StartsWith([Words], '@') and not StartsWith([Words],...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1014" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Words" action="GroupBy" rename="token" />
+                <SummarizeField field="Words" action="Count" rename="count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="689.9999" y="511.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="&quot; &quot;&#xA;// This is just a space" field="New" size="64" type="String" />
+                <FormulaField expression="UPPERCASE([Field_1])" field="Field_1" size="254" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[New = " "
+// This is just a space
+Field_1 = UPPERCASE([Field_1])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="822.9998" y="356" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>Words</FieldFind>
+              <FieldSearch>Field_1</FieldSearch>
+              <ReplaceFoundField>New</ReplaceFoundField>
+              <FindMode>FindAny</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="True" />
+              <ReplaceMode>Replace</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="714.9999" y="356.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="UPPERCASE([text])" field="Words" size="64" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Words = UPPERCASE([text])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1110" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="Count" order="Descending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="1206" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>100</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 100</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1326" y="319" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="TitleCase([token])" field="token" size="64" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[token = TitleCase([Words])
+]]></AnnotationText>
+              <DefaultAnnotationText><![CDATA[token = TitleCase([token])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="487" y="355.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="text" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="533.9999" y="510.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Manju\Documents\Stopwords\english</File>
+              <FormatSpecificOptions>
+                <CodePage>65001</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>english</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="254" source="File: C:\Users\Manju\Documents\Stopwords\english" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="642.9998" y="356.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>text</Field>
+              <RegExExpression value="&amp;amp;$" />
+              <CaseInsensitve value="True" />
+              <Method>Replace</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>text</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+              </ParseComplex>
+              <Match>
+                <Field>text_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="906.0001" y="715" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Length([Words]) &gt; 3 and not StartsWith([Words], '@') and  StartsWith([Words], '#')</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-08-05 07:36:06</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-08-05 07:36:06</StartDate>
+                  <EndDate>2019-08-05 07:36:06</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Length([Words]) &gt; 3 and not StartsWith([Words], '@') and  StartsWith([Words], '#...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1038" y="703" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Words" action="GroupBy" rename="screen_name" />
+                <SummarizeField field="Words" action="Count" rename="count" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1134" y="271" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Word Frequency</Text>
+              <Font name="Arial" size="12" style="1" />
+              <TextColor name="Black" />
+              <FillColor r="204" g="204" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1146" y="463" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Hashtag Frequency</Text>
+              <Font name="Arial" size="12" style="1" />
+              <TextColor name="Black" />
+              <FillColor r="204" g="204" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1158" y="643" width="168" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Mention Frequency</Text>
+              <Font name="Arial" size="12" style="1" />
+              <TextColor name="Black" />
+              <FillColor r="204" g="204" b="255" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output1" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output1" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#settings">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#credentials">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="True" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="False">C:\Users\Manju\AppData\Local\Temp\</TempFiles>
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="True" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="True" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Twitter Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
