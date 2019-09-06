@@ -275,7 +275,7 @@ class TweetsAPI:
             if e.api_code == 429:
                 self.logger.error("[ERROR: TWEEPY API] Too many requests. Wait some minutes.")
             else:
-                self.logger.error("[ERROR: TWEEPY API]")
+                self.logger.error("[ERROR: TWEEPY API]", str(e))
             sys.exit()
         except Exception as e:
             self.logger.error("[ERROR]: " + str(e))

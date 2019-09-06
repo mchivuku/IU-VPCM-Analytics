@@ -61,6 +61,7 @@ def get_engagements_dataframes(engagements_file_path,settings_data = settings_da
     updates["engagement_metrics_update_df"] = read_excel(engagements_file_path,sheet_name = 'Update engagement')
 
     ## Fix the Header
+    """
     new_header = updates["engagement_metrics_update_df"].iloc[0] #grab the first row for the header
     updates["engagement_metrics_update_df"] = updates["engagement_metrics_update_df"][1:] #take the data less the header row
     updates["engagement_metrics_update_df"].columns = new_header #set the header row as the df header
@@ -69,7 +70,7 @@ def get_engagements_dataframes(engagements_file_path,settings_data = settings_da
     
     updates["engagement_metrics_aggregate_df"]  = updates["engagement_metrics_aggregate_df"] [1:] #take the data less the header row
     updates["engagement_metrics_aggregate_df"].columns = new_header_agg #set the header row as the df header
-
+    """
     
     aggregagte = updates["engagement_metrics_aggregate_df"]
     metrics = updates["engagement_metrics_update_df"]
