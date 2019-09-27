@@ -1,0 +1,11 @@
+{
+    "raw_data_dir": "../../data/raw_data/iu-bloomington/instagram",
+    "processed_data_dir": "../../data/processed_data/iu-bloomington/instagram",
+    "username": "@IUBloomington",
+    "start_date": "2018-07-01",
+    "end_date": "2019-06-29",
+    "auth_file": "credentials/auth_iub.k",
+    "user_id":44139452,
+    "full_name":"Indiana University Bloomington",
+    "output_file":"indiana-university_bl_instagram_data.xlsx"
+  }

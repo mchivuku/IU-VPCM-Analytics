@@ -14393,3 +14393,1002 @@
 2019-08-06 11:30:38,712 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by location, has rows: 49 columns: 3
 2019-08-06 11:30:38,712 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by industry, has rows: 37 columns: 3
 2019-08-06 11:30:38,712 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by seniority, has rows: 8 columns: 3
+2019-09-20 16:08:51,163 - linkedIn-preprocessing - INFO - iu - successfully read: visitor metrics and the file has 445 rows and 29 columns
+2019-09-20 16:08:51,282 - linkedIn-preprocessing - INFO - iu successfully read: visitor location and the file has 243 rows and 5 columns
+2019-09-20 16:08:51,386 - linkedIn-preprocessing - INFO - iu successfully read: visitor job_function and the file has 26 rows and 5 columns
+2019-09-20 16:08:51,486 - linkedIn-preprocessing - INFO - iu successfully read: visitor industry and the file has 131 rows and 5 columns
+2019-09-20 16:08:51,606 - linkedIn-preprocessing - INFO - iu successfully read: visitor company_size and the file has 9 rows and 5 columns
+2019-09-20 16:08:51,705 - linkedIn-preprocessing - INFO - iu successfully read: visitor Seniority and the file has 10 rows and 5 columns
+2019-09-20 16:08:51,925 - linkedIn-preprocessing - INFO - iu successfully read: updates, sheet: Update metrics (aggregated), and the file has 445 rows and 22 columns
+2019-09-20 16:08:51,925 - linkedIn-preprocessing - INFO - iu successfully read: updates file, sheet:Update engagement 445 rows and 22 columns
+2019-09-20 16:08:51,969 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: new followers, and the file has 445 rows and      Unnamed: 0       Date  Organic followers  Sponsored followers  Total followers  Unnamed: 0.1
+0             0 2018-09-01                 38                    1               39           NaN
+1             1 2018-09-02                 53                    2               55           NaN
+2             2 2018-09-03                 71                    5               76           NaN
+3             3 2018-09-04                168                    2              170           NaN
+4             4 2018-09-05                109                    8              117           NaN
+5             5 2018-09-06                113                    4              117           NaN
+6             6 2018-09-07                 69                    3               72           NaN
+7             7 2018-09-08                 51                    2               53           NaN
+8             8 2018-09-09                 47                    4               51           NaN
+9             9 2018-09-10                 97                    4              101           NaN
+10           10 2018-09-11                 90                    1               91           NaN
+11           11 2018-09-12                 97                    2               99           NaN
+12           12 2018-09-13                 85                    6               91           NaN
+13           13 2018-09-14                 53                    2               55           NaN
+14           14 2018-09-15                 43                    3               46           NaN
+15           15 2018-09-16                 53                    2               55           NaN
+16           16 2018-09-17                 84                    3               87           NaN
+17           17 2018-09-18                 94                    3               97           NaN
+18           18 2018-09-19                 85                    2               87           NaN
+19           19 2018-09-20                 97                    2               99           NaN
+20           20 2018-09-21                 55                    0               55           NaN
+21           21 2018-09-22                 46                    4               50           NaN
+22           22 2018-09-23                 56                    0               56           NaN
+23           23 2018-09-24                 84                    3               87           NaN
+24           24 2018-09-25                116                    4              120           NaN
+25           25 2018-09-26                 96                    6              102           NaN
+26           26 2018-09-27                 68                    4               72           NaN
+27           27 2018-09-28                 66                    4               70           NaN
+28           28 2018-09-29                 64                    1               65           NaN
+29           29 2018-09-30                 52                    1               53           NaN
+..          ...        ...                ...                  ...              ...           ...
+415         366 2018-07-02                 74                    4               78           1.0
+416         367 2018-07-03                 63                    5               68           2.0
+417         368 2018-07-04                 59                    3               62           3.0
+418         369 2018-07-05                 55                    5               60           4.0
+419         370 2018-07-06                 51                    5               56           5.0
+420         371 2018-07-07                 39                    1               40           6.0
+421         372 2018-07-08                 50                    0               50           7.0
+422         373 2018-07-09                 79                    2               81           8.0
+423         374 2018-07-10                 74                    5               79           9.0
+424         375 2018-07-11                 75                    4               79          10.0
+425         376 2018-07-12                 70                    3               73          11.0
+426         377 2018-07-13                 68                    4               72          12.0
+427         378 2018-07-14                 49                    0               49          13.0
+428         379 2018-07-15                 41                    2               43          14.0
+429         380 2018-07-16                 47                    4               51          15.0
+430         381 2018-07-17                 57                    3               60          16.0
+431         382 2018-07-18                 69                    5               74          17.0
+432         383 2018-07-19                 49                    7               56          18.0
+433         384 2018-07-20                 47                    3               50          19.0
+434         385 2018-07-21                 43                    1               44          20.0
+435         386 2018-07-22                 35                    2               37          21.0
+436         387 2018-07-23                 60                    3               63          22.0
+437         388 2018-07-24                 57                    5               62          23.0
+438         389 2018-07-25                 87                    0               87          24.0
+439         390 2018-07-26                 58                    1               59          25.0
+440         391 2018-07-27                 46                    5               51          26.0
+441         392 2018-07-28                 42                    0               42          27.0
+442         393 2018-07-29                 49                    1               50          28.0
+443         394 2018-07-30                 74                    4               78          29.0
+444         395 2018-07-31                 61                    6               67          30.0
+
+[445 rows x 6 columns] columns
+2019-09-20 16:08:52,007 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: location, and the file has 99 rows and     Unnamed: 0                                       Location  Total followers
+0            0                     Indianapolis, Indiana Area            57199
+1            1                      Bloomington, Indiana Area            38996
+2            2                           Greater Chicago Area            37347
+3            3                     Greater New York City Area            13591
+4            4                     Washington D.C. Metro Area             6827
+5            5                         San Francisco Bay Area             6697
+6            6                       Greater Los Angeles Area             6420
+7            7                      Louisville, Kentucky Area             6341
+8            8                       Fort Wayne, Indiana Area             6025
+9            9                          Cincinnati, Ohio Area             5503
+10          10                            Greater Denver Area             4742
+11          11                           Greater Atlanta Area             4305
+12          12                       South Bend, Indiana Area             3678
+13          13                         Dallas/Fort Worth Area             3566
+14          14                       Evansville, Indiana Area             3481
+15          15                            Greater Boston Area             3428
+16          16                           Greater Seattle Area             3182
+17          17                           Greater Detroit Area             2888
+18          18                         Greater St. Louis Area             2740
+19          19                          Phoenix, Arizona Area             2631
+20          20              Greater Minneapolis-St. Paul Area             2442
+21          21                      Greater Philadelphia Area             2249
+22          22                            Columbus, Ohio Area             2217
+23          23                            Houston, Texas Area             2207
+24          24                             Austin, Texas Area             2074
+25          25                     Greater Nashville Area, TN             1959
+26          26                         Greater San Diego Area             1844
+27          27             Tampa/St. Petersburg, Florida Area             1741
+28          28                     Miami/Fort Lauderdale Area             1715
+29          29                     Cleveland/Akron, Ohio Area             1619
+..         ...                                            ...              ...
+69          69                Colorado Springs, Colorado Area              416
+70          70                           Wichita, Kansas Area              416
+71          71                        Richmond, Virginia Area              415
+72          72  Greensboro/Winston-Salem, North Carolina Area              414
+73          73                       Kalamazoo, Michigan Area              397
+74          74                Urbana-Champaign, Illinois Area              388
+75          75                      Knoxville, Tennessee Area              388
+76          76                         Lansing, Michigan Area              369
+77          77                       Rochester, New York Area              360
+78          78                          Bengaluru Area, India              356
+79          79                             Paris Area, France              351
+80          80                         São Paulo Area, Brazil              347
+81          81                    Fort Collins, Colorado Area              336
+82          82                          Des Moines, Iowa Area              331
+83          83                           Naples, Florida Area              318
+84          84                       Greater New Orleans Area              317
+85          85                               Hawaiian Islands              302
+86          86                   Albuquerque, New Mexico Area              291
+87          87                         Saginaw, Michigan Area              287
+88          88                   Oklahoma City, Oklahoma Area              276
+89          89                             Greater Omaha Area              273
+90          90                  Providence, Rhode Island Area              267
+91          91                 Charlottesville, Virginia Area              267
+92          92                          Hyderabad Area, India              262
+93          93                  Columbia, South Carolina Area              247
+94          94                 Asheville, North Carolina Area              246
+95          95                       Birmingham, Alabama Area              246
+96          96                          Albany, New York Area              240
+97          97                              Sydney, Australia              240
+98          98                   Benton Harbor, Michigan Area              238
+
+[99 rows x 3 columns] columns
+2019-09-20 16:08:52,040 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: job_function, and the file has 26 rows and     Unnamed: 0                      Job function  Total followers
+0            0              Business Development            33326
+1            1                         Education            31274
+2            2                             Sales            22098
+3            3                        Operations            19794
+4            4               Healthcare Services            13005
+5            5                           Finance            12639
+6            6     Community and Social Services            11759
+7            7            Information Technology            11116
+8            8                          Research             9707
+9            9                       Engineering             9051
+10          10           Media and Communication             8942
+11          11                         Marketing             8622
+12          12                   Human Resources             8017
+13          13                   Arts and Design             7889
+14          14                             Legal             6627
+15          15                    Administrative             6386
+16          16    Program and Project Management             5649
+17          17                        Consulting             4845
+18          18                           Support             4823
+19          19                        Accounting             4686
+20          20                       Real Estate             3503
+21          21                  Entrepreneurship             2520
+22          22  Military and Protective Services             1924
+23          23                Product Management             1715
+24          24                 Quality Assurance             1371
+25          25                        Purchasing             1348 columns
+2019-09-20 16:08:52,078 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: industry, and the file has 99 rows and     Unnamed: 0                              Industry  Total followers
+0            0                      Higher Education            35058
+1            1                Hospital & Health Care            17166
+2            2                    Financial Services            13950
+3            3   Information Technology and Services            12863
+4            4                  Education Management            10044
+5            5             Marketing and Advertising             8156
+6            6                           Real Estate             7597
+7            7                     Computer Software             6974
+8            8                                Retail             6707
+9            9     Nonprofit Organization Management             6213
+10          10                            Accounting             5931
+11          11                          Law Practice             5832
+12          12          Health, Wellness and Fitness             5755
+13          13                             Insurance             5714
+14          14                 Management Consulting             5272
+15          15             Government Administration             4966
+16          16                              Internet             4952
+17          17                       Pharmaceuticals             4383
+18          18                              Research             4161
+19          19                            Automotive             4115
+20          20           Primary/Secondary Education             3768
+21          21                               Banking             3533
+22          22                          Construction             3415
+23          23                       Medical Devices             3346
+24          24                                 Music             3326
+25          25                      Medical Practice             3219
+26          26                        Consumer Goods             3072
+27          27                         Entertainment             3022
+28          28                      Food & Beverages             2837
+29          29                                Sports             2639
+..         ...                                   ...              ...
+69          69                 International Affairs              917
+70          70                       Food Production              902
+71          71              Museums and Institutions              901
+72          72                       Mining & Metals              879
+73          73                Commercial Real Estate              858
+74          74                  Aviation & Aerospace              831
+75          75                       Arts and Crafts              825
+76          76                              Fine Art              823
+77          77       Business Supplies and Equipment              814
+78          78                  Information Services              808
+79          79                     Airlines/Aviation              787
+80          80                   Facilities Services              744
+81          81                     Civil Engineering              727
+82          82               Architecture & Planning              722
+83          83                         Public Policy              711
+84          84                  Consumer Electronics              705
+85          85                       Law Enforcement              694
+86          86                           Photography              692
+87          87                          Philanthropy              672
+88          88              Renewables & Environment              667
+89          89                       Market Research              660
+90          90  Recreational Facilities and Services              650
+91          91                             Furniture              637
+92          92                    Investment Banking              624
+93          93                          Online Media              603
+94          94                            Newspapers              602
+95          95      Venture Capital & Private Equity              599
+96          96                      Wine and Spirits              583
+97          97                              Printing              577
+98          98                          Fund-Raising              561
+
+[99 rows x 3 columns] columns
+2019-09-20 16:08:52,111 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: company_size, and the file has 9 rows and    Unnamed: 0 Company size  Total followers
+0           0       10001+            65515
+1           1    1001-5000            31508
+2           2       51-200            24832
+3           3        11-50            22971
+4           4      201-500            18483
+5           5         2-10            16183
+6           6   5001-10000            14624
+7           7     501-1000            13157
+8           8            1             2275 columns
+2019-09-20 16:08:52,143 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: seniority, and the file has 10 rows and    Unnamed: 0 Seniority  Total followers
+0           0    Senior            89739
+1           1     Entry            85454
+2           2  Director            27165
+3           3   Manager            19105
+4           4        VP            13559
+5           5     Owner            11547
+6           6       CXO             9494
+7           7  Training             8801
+8           8   Partner             2871
+9           9    Unpaid             1893 columns
+2019-09-20 16:08:52,145 - linkedIn-preprocessing - INFO - iu start date 2018-07-01  end date 2019-09-18
+2019-09-20 16:08:53,126 - linkedIn-preprocessing - INFO - iu - Successfully built, engagement_insights, has rows: 445 columns: 29
+2019-09-20 16:08:53,126 - linkedIn-preprocessing - INFO - iu - Successfully built, top_engagement_posts, has rows: 257 columns: 14
+2019-09-20 16:08:53,126 - linkedIn-preprocessing - INFO - iu - Successfully built, visitors by location, has rows: 243 columns: 5
+2019-09-20 16:08:53,126 - linkedIn-preprocessing - INFO - iu - Successfully built, visitors by industry, has rows: 131 columns: 5
+2019-09-20 16:08:53,126 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by location, has rows: 99 columns: 3
+2019-09-20 16:08:53,127 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by industry, has rows: 99 columns: 3
+2019-09-20 16:08:53,127 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by seniority, has rows: 10 columns: 3
+2019-09-20 16:17:52,692 - linkedIn-preprocessing - INFO - iu - successfully read: visitor metrics and the file has 414 rows and 27 columns
+2019-09-20 16:17:52,773 - linkedIn-preprocessing - INFO - iu successfully read: visitor location and the file has 149 rows and 3 columns
+2019-09-20 16:17:52,871 - linkedIn-preprocessing - INFO - iu successfully read: visitor job_function and the file has 26 rows and 3 columns
+2019-09-20 16:17:52,952 - linkedIn-preprocessing - INFO - iu successfully read: visitor industry and the file has 110 rows and 3 columns
+2019-09-20 16:17:53,033 - linkedIn-preprocessing - INFO - iu successfully read: visitor company_size and the file has 9 rows and 3 columns
+2019-09-20 16:17:53,132 - linkedIn-preprocessing - INFO - iu successfully read: visitor Seniority and the file has 10 rows and 3 columns
+2019-09-20 16:17:53,290 - linkedIn-preprocessing - INFO - iu successfully read: updates, sheet: Update metrics (aggregated), and the file has 414 rows and 22 columns
+2019-09-20 16:17:53,290 - linkedIn-preprocessing - INFO - iu successfully read: updates file, sheet:Update engagement 414 rows and 22 columns
+2019-09-20 16:17:53,331 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: new followers, and the file has 395 rows and      Unnamed: 0       Date  Organic followers  Sponsored followers  Total followers  Unnamed: 0.1
+0             0 2019-08-20                  3                    0                3           NaN
+1             1 2019-08-21                  0                    0                0           NaN
+2             2 2019-08-22                  2                    0                2           NaN
+3             3 2019-08-23                  2                    0                2           NaN
+4             4 2019-08-24                  1                    0                1           NaN
+5             5 2019-08-25                  0                    0                0           NaN
+6             6 2019-08-26                  0                    0                0           NaN
+7             7 2019-08-27                  3                    0                3           NaN
+8             8 2019-08-28                  0                    0                0           NaN
+9             9 2019-08-29                  1                    0                1           NaN
+10           10 2019-08-30                  1                    0                1           NaN
+11           11 2019-08-31                  1                    0                1           NaN
+12           12 2019-09-01                  1                    0                1           NaN
+13           13 2019-09-02                  5                    0                5           NaN
+14           14 2019-09-03                  2                    0                2           NaN
+15           15 2019-09-04                  1                    0                1           NaN
+16           16 2019-09-05                  2                    0                2           NaN
+17           17 2019-09-06                  0                    0                0           NaN
+18           18 2019-09-07                  1                    0                1           NaN
+19           19 2019-09-08                  1                    0                1           NaN
+20           20 2019-09-09                  1                    0                1           NaN
+21           21 2019-09-10                  1                    0                1           NaN
+22           22 2019-09-11                  2                    0                2           NaN
+23           23 2019-09-12                  0                    0                0           NaN
+24           24 2019-09-13                  1                    0                1           NaN
+25           25 2019-09-14                  1                    0                1           NaN
+26           26 2019-09-15                  3                    0                3           NaN
+27           27 2019-09-16                  1                    0                1           NaN
+28           28 2019-09-17                  3                    0                3           NaN
+29           29 2019-09-18                  1                    0                1           NaN
+..          ...        ...                ...                  ...              ...           ...
+365         335 2019-07-02                  3                    0                3         335.0
+366         336 2019-07-03                  1                    0                1         336.0
+367         337 2019-07-04                  1                    0                1         337.0
+368         338 2019-07-05                  1                    0                1         338.0
+369         339 2019-07-06                  0                    0                0         339.0
+370         340 2019-07-07                  0                    0                0         340.0
+371         341 2019-07-08                  5                    0                5         341.0
+372         342 2019-07-09                  2                    0                2         342.0
+373         343 2019-07-10                  2                    0                2         343.0
+374         344 2019-07-11                  4                    0                4         344.0
+375         345 2019-07-12                  1                    0                1         345.0
+376         346 2019-07-13                  0                    0                0         346.0
+377         347 2019-07-14                  2                    0                2         347.0
+378         348 2019-07-15                  2                    0                2         348.0
+379         349 2019-07-16                  0                    0                0         349.0
+380         350 2019-07-17                  1                    0                1         350.0
+381         351 2019-07-18                  2                    0                2         351.0
+382         352 2019-07-19                 -1                    0               -1         352.0
+383         353 2019-07-20                  1                    0                1         353.0
+384         354 2019-07-21                  0                    0                0         354.0
+385         355 2019-07-22                  0                    0                0         355.0
+386         356 2019-07-23                  3                    0                3         356.0
+387         357 2019-07-24                  2                    0                2         357.0
+388         358 2019-07-25                  3                    0                3         358.0
+389         359 2019-07-26                  0                    0                0         359.0
+390         360 2019-07-27                  0                    0                0         360.0
+391         361 2019-07-28                  0                    0                0         361.0
+392         362 2019-07-29                  3                    0                3         362.0
+393         363 2019-07-30                  1                    0                1         363.0
+394         364 2019-07-31                  3                    0                3         364.0
+
+[395 rows x 6 columns] columns
+2019-09-20 16:17:53,363 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: location, and the file has 60 rows and     Unnamed: 0                                       Location  Total followers
+0            0                     Indianapolis, Indiana Area              125
+1            1                      Bloomington, Indiana Area              110
+2            2                          Cincinnati, Ohio Area               10
+3            3                           Greater Chicago Area                7
+4            4                      Louisville, Kentucky Area                7
+5            5                       Fort Wayne, Indiana Area                5
+6            6                     Washington D.C. Metro Area                4
+7            7                            Greater Boston Area                4
+8            8                       Greater Los Angeles Area                3
+9            9                       South Bend, Indiana Area                3
+10          10              Greater Minneapolis-St. Paul Area                2
+11          11                           Greater Seattle Area                2
+12          12                 Orange County, California Area                2
+13          13                     Greater New York City Area                2
+14          14                            Columbus, Ohio Area                2
+15          15                         San Francisco Bay Area                2
+16          16                               Lahore, Pakistan                1
+17          17                            Taipei City, Taiwan                1
+18          18                       Fort Myers, Florida Area                1
+19          19                        Lafayette, Indiana Area                1
+20          20                 Charlotte, North Carolina Area                1
+21          21                        Madison, Wisconsin Area                1
+22          22               Ciudad López Mateos Area, Mexico                1
+23          23                    Chattanooga, Tennessee Area                1
+24          24  Greensboro/Winston-Salem, North Carolina Area                1
+25          25                        Jackson, Tennessee Area                1
+26          26                         Lincoln, Nebraska Area                1
+27          27                   Cape Town Area, South Africa                1
+28          28                       Modesto, California Area                1
+29          29                           Greater Atlanta Area                1
+30          30                          Hyderabad Area, India                1
+31          31                     Miami/Fort Lauderdale Area                1
+32          32                    Clarksville, Tennessee Area                1
+33          33                       Evansville, Indiana Area                1
+34          34                              Toledo, Ohio Area                1
+35          35                        Rockford, Illinois Area                1
+36          36                     Hartford, Connecticut Area                1
+37          37                Parkersburg, West Virginia Area                1
+38          38                            Chennai Area, India                1
+39          39                      Kénitra Province, Morocco                1
+40          40                     Cleveland/Akron, Ohio Area                1
+41          41      Region VII - Central Visayas, Philippines                1
+42          42                       Kalamazoo, Michigan Area                1
+43          43                         Las Vegas, Nevada Area                1
+44          44                           Naples, Florida Area                1
+45          45                     Greater Nashville Area, TN                1
+46          46                      Greater Philadelphia Area                1
+47          47                           Greater Detroit Area                1
+48          48                           Kokomo, Indiana Area                1
+49          49                     Corpus Christi, Texas Area                1
+50          50                          Phoenix, Arizona Area                1
+51          51              Bloomington/Normal, Illinois Area                1
+52          52                      Great Falls, Montana Area                1
+53          53                    Sacramento, California Area                1
+54          54                       Lexington, Kentucky Area                1
+55          55                        Zhengzhou, Henan, China                1
+56          56                       Mexico City Area, Mexico                1
+57          57                         Greater St. Louis Area                1
+58          58                            Houston, Texas Area                1
+59          59                   Benton Harbor, Michigan Area                1 columns
+2019-09-20 16:17:53,394 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: job_function, and the file has 23 rows and     Unnamed: 0                      Job function  Total followers
+0            0                         Education               50
+1            1            Information Technology               35
+2            2                          Research               33
+3            3              Business Development               25
+4            4                         Marketing               19
+5            5                    Administrative               19
+6            6           Media and Communication               17
+7            7                        Operations               16
+8            8               Healthcare Services               15
+9            9                   Arts and Design               14
+10          10     Community and Social Services               12
+11          11                       Engineering                9
+12          12                           Support                8
+13          13                             Sales                7
+14          14    Program and Project Management                7
+15          15                             Legal                5
+16          16                   Human Resources                4
+17          17  Military and Protective Services                4
+18          18                        Accounting                4
+19          19                           Finance                4
+20          20                Product Management                3
+21          21                        Consulting                3
+22          22                        Purchasing                1 columns
+2019-09-20 16:17:53,425 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: industry, and the file has 47 rows and     Unnamed: 0                             Industry  Total followers
+0            0                     Higher Education              242
+1            1               Hospital & Health Care               11
+2            2    Nonprofit Organization Management                8
+3            3                             Research                6
+4            4  Information Technology and Services                6
+5            5            Government Administration                5
+6            6            Marketing and Advertising                4
+7            7                 Education Management                3
+8            8                      Medical Devices                3
+9            9                          Real Estate                2
+10          10          Primary/Secondary Education                2
+11          11                         Construction                2
+12          12                               Retail                2
+13          13                         Online Media                2
+14          14                      Human Resources                2
+15          15              Architecture & Planning                2
+16          16                               Sports                2
+17          17                        Biotechnology                2
+18          18                     Medical Practice                2
+19          19                         Fund-Raising                2
+20          20                    Computer Software                2
+21          21              Staffing and Recruiting                2
+22          22                             Internet                2
+23          23                         Law Practice                2
+24          24                Investment Management                1
+25          25                       Consumer Goods                1
+26          26                            Furniture                1
+27          27           Logistics and Supply Chain                1
+28          28                             Military                1
+29          29                 Aviation & Aerospace                1
+30          30                          Hospitality                1
+31          31                           Automotive                1
+32          32                          Restaurants                1
+33          33                            Chemicals                1
+34          34                       Legal Services                1
+35          35                               Design                1
+36          36                Management Consulting                1
+37          37             Museums and Institutions                1
+38          38                             Fine Art                1
+39          39                      Performing Arts                1
+40          40         Health, Wellness and Fitness                1
+41          41     Venture Capital & Private Equity                1
+42          42                   Telecommunications                1
+43          43                           Newspapers                1
+44          44                             Printing                1
+45          45                            Insurance                1
+46          46                   Financial Services                1 columns
+2019-09-20 16:17:53,454 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: company_size, and the file has 8 rows and    Unnamed: 0 Company size  Total followers
+0           0       10001+              230
+1           1   5001-10000               17
+2           2        11-50               16
+3           3       51-200               15
+4           4      201-500               13
+5           5    1001-5000                5
+6           6     501-1000                4
+7           7         2-10                3 columns
+2019-09-20 16:17:53,500 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: seniority, and the file has 8 rows and    Unnamed: 0 Seniority  Total followers
+0           0     Entry              126
+1           1    Senior               99
+2           2  Director               37
+3           3  Training               33
+4           4   Manager               12
+5           5        VP               12
+6           6     Owner                5
+7           7       CXO                4 columns
+2019-09-20 16:17:53,501 - linkedIn-preprocessing - INFO - iu start date 2018-08-01  end date 2019-09-18
+2019-09-20 16:17:54,433 - linkedIn-preprocessing - INFO - iu - Successfully built, engagement_insights, has rows: 414 columns: 29
+2019-09-20 16:17:54,434 - linkedIn-preprocessing - INFO - iu - Successfully built, top_engagement_posts, has rows: 113 columns: 14
+2019-09-20 16:17:54,435 - linkedIn-preprocessing - INFO - iu - Successfully built, visitors by location, has rows: 149 columns: 3
+2019-09-20 16:17:54,435 - linkedIn-preprocessing - INFO - iu - Successfully built, visitors by industry, has rows: 110 columns: 3
+2019-09-20 16:17:54,435 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by location, has rows: 60 columns: 3
+2019-09-20 16:17:54,435 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by industry, has rows: 47 columns: 3
+2019-09-20 16:17:54,435 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by seniority, has rows: 8 columns: 3
+2019-09-20 16:26:34,041 - linkedIn-preprocessing - INFO - iu - successfully read: visitor metrics and the file has 445 rows and 27 columns
+2019-09-20 16:26:34,133 - linkedIn-preprocessing - INFO - iu successfully read: visitor location and the file has 207 rows and 3 columns
+2019-09-20 16:26:34,245 - linkedIn-preprocessing - INFO - iu successfully read: visitor job_function and the file has 26 rows and 3 columns
+2019-09-20 16:26:34,336 - linkedIn-preprocessing - INFO - iu successfully read: visitor industry and the file has 125 rows and 3 columns
+2019-09-20 16:26:34,428 - linkedIn-preprocessing - INFO - iu successfully read: visitor company_size and the file has 9 rows and 3 columns
+2019-09-20 16:26:34,540 - linkedIn-preprocessing - INFO - iu successfully read: visitor Seniority and the file has 10 rows and 3 columns
+2019-09-20 16:26:34,699 - linkedIn-preprocessing - INFO - iu successfully read: updates, sheet: Update metrics (aggregated), and the file has 445 rows and 22 columns
+2019-09-20 16:26:34,700 - linkedIn-preprocessing - INFO - iu successfully read: updates file, sheet:Update engagement 445 rows and 22 columns
+2019-09-20 16:26:34,744 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: new followers, and the file has 445 rows and      Unnamed: 0       Date  Organic followers  Sponsored followers  Total followers  Unnamed: 0.1
+0             0 2018-09-01                 17                    0               17           NaN
+1             1 2018-09-02                 13                    0               13           NaN
+2             2 2018-09-03                 26                    0               26           NaN
+3             3 2018-09-04                 34                    0               34           NaN
+4             4 2018-09-05                 43                    0               43           NaN
+5             5 2018-09-06                 44                    0               44           NaN
+6             6 2018-09-07                 38                    0               38           NaN
+7             7 2018-09-08                 31                    0               31           NaN
+8             8 2018-09-09                 32                    0               32           NaN
+9             9 2018-09-10                 34                    0               34           NaN
+10           10 2018-09-11                 56                    0               56           NaN
+11           11 2018-09-12                 57                    0               57           NaN
+12           12 2018-09-13                 54                    0               54           NaN
+13           13 2018-09-14                 41                    0               41           NaN
+14           14 2018-09-15                 20                    0               20           NaN
+15           15 2018-09-16                 23                    0               23           NaN
+16           16 2018-09-17                 51                    0               51           NaN
+17           17 2018-09-18                 49                    0               49           NaN
+18           18 2018-09-19                 57                    0               57           NaN
+19           19 2018-09-20                 43                    0               43           NaN
+20           20 2018-09-21                 17                    0               17           NaN
+21           21 2018-09-22                 15                    0               15           NaN
+22           22 2018-09-23                 11                    0               11           NaN
+23           23 2018-09-24                 31                    0               31           NaN
+24           24 2018-09-25                 36                    0               36           NaN
+25           25 2018-09-26                 34                    0               34           NaN
+26           26 2018-09-27                 42                    0               42           NaN
+27           27 2018-09-28                 41                    0               41           NaN
+28           28 2018-09-29                 25                    0               25           NaN
+29           29 2018-09-30                 27                    0               27           NaN
+..          ...        ...                ...                  ...              ...           ...
+415         366 2018-07-02                 24                    0               24           1.0
+416         367 2018-07-03                 16                    0               16           2.0
+417         368 2018-07-04                 19                    0               19           3.0
+418         369 2018-07-05                 28                    0               28           4.0
+419         370 2018-07-06                 21                    0               21           5.0
+420         371 2018-07-07                 18                    0               18           6.0
+421         372 2018-07-08                 11                    0               11           7.0
+422         373 2018-07-09                 24                    0               24           8.0
+423         374 2018-07-10                 34                    0               34           9.0
+424         375 2018-07-11                 31                    0               31          10.0
+425         376 2018-07-12                 26                    0               26          11.0
+426         377 2018-07-13                 24                    0               24          12.0
+427         378 2018-07-14                 19                    0               19          13.0
+428         379 2018-07-15                 15                    0               15          14.0
+429         380 2018-07-16                 25                    0               25          15.0
+430         381 2018-07-17                 28                    0               28          16.0
+431         382 2018-07-18                 32                    0               32          17.0
+432         383 2018-07-19                 17                    0               17          18.0
+433         384 2018-07-20                 27                    0               27          19.0
+434         385 2018-07-21                  8                    0                8          20.0
+435         386 2018-07-22                 17                    0               17          21.0
+436         387 2018-07-23                 26                    0               26          22.0
+437         388 2018-07-24                 36                    0               36          23.0
+438         389 2018-07-25                 28                    0               28          24.0
+439         390 2018-07-26                 21                    0               21          25.0
+440         391 2018-07-27                 32                    0               32          26.0
+441         392 2018-07-28                 11                    0               11          27.0
+442         393 2018-07-29                 22                    0               22          28.0
+443         394 2018-07-30                 30                    0               30          29.0
+444         395 2018-07-31                 33                    0               33          30.0
+
+[445 rows x 6 columns] columns
+2019-09-20 16:26:34,783 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: location, and the file has 98 rows and     Unnamed: 0                            Location  Total followers
+0            0          Indianapolis, Indiana Area            68948
+1            1                Greater Chicago Area             2985
+2            2           Bloomington, Indiana Area             1431
+3            3            Fort Wayne, Indiana Area             1304
+4            4           Louisville, Kentucky Area             1279
+5            5               Cincinnati, Ohio Area             1208
+6            6             Lafayette, Indiana Area             1038
+7            7              San Francisco Bay Area              894
+8            8                Greater Atlanta Area              891
+9            9          Greater New York City Area              804
+10          10          Washington D.C. Metro Area              790
+11          11            Greater Los Angeles Area              787
+12          12              Dallas/Fort Worth Area              772
+13          13                 Greater Denver Area              707
+14          14  Tampa/St. Petersburg, Florida Area              640
+15          15               Phoenix, Arizona Area              633
+16          16                Greater Detroit Area              632
+17          17            Evansville, Indiana Area              614
+18          18                Greater Seattle Area              546
+19          19            South Bend, Indiana Area              534
+20          20                Kokomo, Indiana Area              517
+21          21                 Houston, Texas Area              480
+22          22           Terre Haute, Indiana Area              472
+23          23          Greater Nashville Area, TN              460
+24          24                Muncie, Indiana Area              437
+25          25                 Greater Boston Area              411
+26          26                 Columbus, Ohio Area              394
+27          27              Greater St. Louis Area              382
+28          28               Orlando, Florida Area              344
+29          29              Greater San Diego Area              330
+..         ...                                 ...              ...
+68          68     Urbana-Champaign, Illinois Area               81
+69          69            Kalamazoo, Michigan Area               80
+70          70             Melbourne, Florida Area               79
+71          71                Wichita, Kansas Area               79
+72          72                Naples, Florida Area               75
+73          73              Saginaw, Michigan Area               75
+74          74              Lansing, Michigan Area               71
+75          75         Daytona Beach, Florida Area               71
+76          76              Savannah, Georgia Area               69
+77          77            Greater New Orleans Area               68
+78          78        Albuquerque, New Mexico Area               67
+79          79            Birmingham, Alabama Area               67
+80          80       Columbia, South Carolina Area               66
+81          81                    Hawaiian Islands               65
+82          82                Toronto, Canada Area               61
+83          83                  Mumbai Area, India               61
+84          84              London, United Kingdom               60
+85          85              Lakeland, Florida Area               60
+86          86              São Paulo Area, Brazil               59
+87          87         Chattanooga, Tennessee Area               59
+88          88          Hartford, Connecticut Area               59
+89          89               Des Moines, Iowa Area               58
+90          90         Fort Collins, Colorado Area               57
+91          91           Gainesville, Florida Area               56
+92          92                  Greater Omaha Area               55
+93          93                Tulsa, Oklahoma Area               52
+94          94              Anchorage, Alaska Area               50
+95          95            Huntsville, Alabama Area               50
+96          96               Bengaluru Area, India               49
+97          97       Providence, Rhode Island Area               45
+
+[98 rows x 3 columns] columns
+2019-09-20 16:26:34,836 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: job_function, and the file has 26 rows and     Unnamed: 0                      Job function  Total followers
+0            0                        Operations             8974
+1            1               Healthcare Services             8694
+2            2              Business Development             8106
+3            3                         Education             8073
+4            4                             Sales             5658
+5            5                       Engineering             5229
+6            6            Information Technology             4983
+7            7     Community and Social Services             4571
+8            8                          Research             3452
+9            9                    Administrative             2939
+10          10                   Human Resources             2681
+11          11                           Finance             2637
+12          12                           Support             2627
+13          13    Program and Project Management             2310
+14          14                   Arts and Design             2002
+15          15                        Accounting             1846
+16          16           Media and Communication             1841
+17          17                         Marketing             1729
+18          18                             Legal             1427
+19          19                        Consulting             1213
+20          20                       Real Estate             1113
+21          21                 Quality Assurance              880
+22          22  Military and Protective Services              880
+23          23                        Purchasing              367
+24          24                  Entrepreneurship              356
+25          25                Product Management              312 columns
+2019-09-20 16:26:34,881 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: industry, and the file has 99 rows and     Unnamed: 0                              Industry  Total followers
+0            0                Hospital & Health Care            12081
+1            1                      Higher Education             9369
+2            2   Information Technology and Services             3802
+3            3                                Retail             2891
+4            4                  Education Management             2852
+5            5                    Financial Services             2651
+6            6                            Automotive             2496
+7            7          Health, Wellness and Fitness             2469
+8            8                           Real Estate             2289
+9            9     Nonprofit Organization Management             2250
+10          10                             Insurance             2237
+11          11             Government Administration             1999
+12          12                          Construction             1965
+13          13                       Pharmaceuticals             1935
+14          14                     Computer Software             1859
+15          15                              Research             1812
+16          16                      Medical Practice             1494
+17          17             Marketing and Advertising             1414
+18          18                            Accounting             1412
+19          19                    Mental Health Care             1213
+20          20                              Internet             1194
+21          21                           Restaurants             1128
+22          22           Primary/Secondary Education             1123
+23          23                           Hospitality             1089
+24          24  Mechanical or Industrial Engineering             1029
+25          25                       Medical Devices              968
+26          26            Logistics and Supply Chain              961
+27          27                          Law Practice              846
+28          28                 Management Consulting              844
+29          29          Individual & Family Services              826
+..         ...                                   ...              ...
+69          69   Public Relations and Communications              304
+70          70                     Apparel & Fashion              296
+71          71                         Public Safety              290
+72          72               Architecture & Planning              286
+73          73                                 Music              271
+74          74                            Publishing              270
+75          75                        Graphic Design              268
+76          76                       Broadcast Media              262
+77          77                          Philanthropy              247
+78          78                       Arts and Crafts              243
+79          79                            E-Learning              238
+80          80                       Food Production              231
+81          81                           Photography              231
+82          82       Business Supplies and Equipment              211
+83          83                  Information Services              205
+84          84                              Printing              197
+85          85                              Fine Art              193
+86          86                               Farming              190
+87          87              Package/Freight Delivery              190
+88          88                          Fund-Raising              178
+89          89                             Cosmetics              177
+90          90                  Government Relations              177
+91          91                  Consumer Electronics              176
+92          92                       Mining & Metals              172
+93          93                             Furniture              168
+94          94              Renewables & Environment              164
+95          95                 Investment Management              159
+96          96           Computer & Network Security              158
+97          97                   Computer Networking              151
+98          98  Recreational Facilities and Services              150
+
+[99 rows x 3 columns] columns
+2019-09-20 16:26:34,920 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: company_size, and the file has 9 rows and    Unnamed: 0 Company size  Total followers
+0           0       10001+            20091
+1           1    1001-5000            10312
+2           2   5001-10000             8657
+3           3       51-200             8338
+4           4        11-50             7284
+5           5      201-500             6088
+6           6         2-10             4816
+7           7     501-1000             4496
+8           8            1              640 columns
+2019-09-20 16:26:34,956 - linkedIn-preprocessing - INFO - iu - successfully read: followers, sheet: seniority, and the file has 10 rows and    Unnamed: 0 Seniority  Total followers
+0           0     Entry            35685
+1           1    Senior            29634
+2           2  Director             6645
+3           3   Manager             6360
+4           4     Owner             3256
+5           5  Training             2825
+6           6        VP             2422
+7           7       CXO             2010
+8           8    Unpaid              527
+9           9   Partner              361 columns
+2019-09-20 16:26:34,957 - linkedIn-preprocessing - INFO - iu start date 2018-07-01  end date 2019-09-18
+2019-09-20 16:26:35,927 - linkedIn-preprocessing - INFO - iu - Successfully built, engagement_insights, has rows: 445 columns: 29
+2019-09-20 16:26:35,927 - linkedIn-preprocessing - INFO - iu - Successfully built, top_engagement_posts, has rows: 68 columns: 14
+2019-09-20 16:26:35,928 - linkedIn-preprocessing - INFO - iu - Successfully built, visitors by location, has rows: 207 columns: 3
+2019-09-20 16:26:35,928 - linkedIn-preprocessing - INFO - iu - Successfully built, visitors by industry, has rows: 125 columns: 3
+2019-09-20 16:26:35,928 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by location, has rows: 98 columns: 3
+2019-09-20 16:26:35,928 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by industry, has rows: 99 columns: 3
+2019-09-20 16:26:35,928 - linkedIn-preprocessing - INFO - iu - Successfully built, followers by seniority, has rows: 10 columns: 3
+2019-09-20 16:26:43,552 - linkedIn-preprocessing - INFO - iupui - successfully read: visitor metrics and the file has 445 rows and 27 columns
+2019-09-20 16:26:43,641 - linkedIn-preprocessing - INFO - iupui successfully read: visitor location and the file has 207 rows and 3 columns
+2019-09-20 16:26:43,748 - linkedIn-preprocessing - INFO - iupui successfully read: visitor job_function and the file has 26 rows and 3 columns
+2019-09-20 16:26:43,840 - linkedIn-preprocessing - INFO - iupui successfully read: visitor industry and the file has 125 rows and 3 columns
+2019-09-20 16:26:43,928 - linkedIn-preprocessing - INFO - iupui successfully read: visitor company_size and the file has 9 rows and 3 columns
+2019-09-20 16:26:44,040 - linkedIn-preprocessing - INFO - iupui successfully read: visitor Seniority and the file has 10 rows and 3 columns
+2019-09-20 16:26:44,193 - linkedIn-preprocessing - INFO - iupui successfully read: updates, sheet: Update metrics (aggregated), and the file has 445 rows and 22 columns
+2019-09-20 16:26:44,194 - linkedIn-preprocessing - INFO - iupui successfully read: updates file, sheet:Update engagement 445 rows and 22 columns
+2019-09-20 16:26:44,238 - linkedIn-preprocessing - INFO - iupui - successfully read: followers, sheet: new followers, and the file has 445 rows and      Unnamed: 0       Date  Organic followers  Sponsored followers  Total followers  Unnamed: 0.1
+0             0 2018-09-01                 17                    0               17           NaN
+1             1 2018-09-02                 13                    0               13           NaN
+2             2 2018-09-03                 26                    0               26           NaN
+3             3 2018-09-04                 34                    0               34           NaN
+4             4 2018-09-05                 43                    0               43           NaN
+5             5 2018-09-06                 44                    0               44           NaN
+6             6 2018-09-07                 38                    0               38           NaN
+7             7 2018-09-08                 31                    0               31           NaN
+8             8 2018-09-09                 32                    0               32           NaN
+9             9 2018-09-10                 34                    0               34           NaN
+10           10 2018-09-11                 56                    0               56           NaN
+11           11 2018-09-12                 57                    0               57           NaN
+12           12 2018-09-13                 54                    0               54           NaN
+13           13 2018-09-14                 41                    0               41           NaN
+14           14 2018-09-15                 20                    0               20           NaN
+15           15 2018-09-16                 23                    0               23           NaN
+16           16 2018-09-17                 51                    0               51           NaN
+17           17 2018-09-18                 49                    0               49           NaN
+18           18 2018-09-19                 57                    0               57           NaN
+19           19 2018-09-20                 43                    0               43           NaN
+20           20 2018-09-21                 17                    0               17           NaN
+21           21 2018-09-22                 15                    0               15           NaN
+22           22 2018-09-23                 11                    0               11           NaN
+23           23 2018-09-24                 31                    0               31           NaN
+24           24 2018-09-25                 36                    0               36           NaN
+25           25 2018-09-26                 34                    0               34           NaN
+26           26 2018-09-27                 42                    0               42           NaN
+27           27 2018-09-28                 41                    0               41           NaN
+28           28 2018-09-29                 25                    0               25           NaN
+29           29 2018-09-30                 27                    0               27           NaN
+..          ...        ...                ...                  ...              ...           ...
+415         366 2018-07-02                 24                    0               24           1.0
+416         367 2018-07-03                 16                    0               16           2.0
+417         368 2018-07-04                 19                    0               19           3.0
+418         369 2018-07-05                 28                    0               28           4.0
+419         370 2018-07-06                 21                    0               21           5.0
+420         371 2018-07-07                 18                    0               18           6.0
+421         372 2018-07-08                 11                    0               11           7.0
+422         373 2018-07-09                 24                    0               24           8.0
+423         374 2018-07-10                 34                    0               34           9.0
+424         375 2018-07-11                 31                    0               31          10.0
+425         376 2018-07-12                 26                    0               26          11.0
+426         377 2018-07-13                 24                    0               24          12.0
+427         378 2018-07-14                 19                    0               19          13.0
+428         379 2018-07-15                 15                    0               15          14.0
+429         380 2018-07-16                 25                    0               25          15.0
+430         381 2018-07-17                 28                    0               28          16.0
+431         382 2018-07-18                 32                    0               32          17.0
+432         383 2018-07-19                 17                    0               17          18.0
+433         384 2018-07-20                 27                    0               27          19.0
+434         385 2018-07-21                  8                    0                8          20.0
+435         386 2018-07-22                 17                    0               17          21.0
+436         387 2018-07-23                 26                    0               26          22.0
+437         388 2018-07-24                 36                    0               36          23.0
+438         389 2018-07-25                 28                    0               28          24.0
+439         390 2018-07-26                 21                    0               21          25.0
+440         391 2018-07-27                 32                    0               32          26.0
+441         392 2018-07-28                 11                    0               11          27.0
+442         393 2018-07-29                 22                    0               22          28.0
+443         394 2018-07-30                 30                    0               30          29.0
+444         395 2018-07-31                 33                    0               33          30.0
+
+[445 rows x 6 columns] columns
+2019-09-20 16:26:44,277 - linkedIn-preprocessing - INFO - iupui - successfully read: followers, sheet: location, and the file has 98 rows and     Unnamed: 0                            Location  Total followers
+0            0          Indianapolis, Indiana Area            68948
+1            1                Greater Chicago Area             2985
+2            2           Bloomington, Indiana Area             1431
+3            3            Fort Wayne, Indiana Area             1304
+4            4           Louisville, Kentucky Area             1279
+5            5               Cincinnati, Ohio Area             1208
+6            6             Lafayette, Indiana Area             1038
+7            7              San Francisco Bay Area              894
+8            8                Greater Atlanta Area              891
+9            9          Greater New York City Area              804
+10          10          Washington D.C. Metro Area              790
+11          11            Greater Los Angeles Area              787
+12          12              Dallas/Fort Worth Area              772
+13          13                 Greater Denver Area              707
+14          14  Tampa/St. Petersburg, Florida Area              640
+15          15               Phoenix, Arizona Area              633
+16          16                Greater Detroit Area              632
+17          17            Evansville, Indiana Area              614
+18          18                Greater Seattle Area              546
+19          19            South Bend, Indiana Area              534
+20          20                Kokomo, Indiana Area              517
+21          21                 Houston, Texas Area              480
+22          22           Terre Haute, Indiana Area              472
+23          23          Greater Nashville Area, TN              460
+24          24                Muncie, Indiana Area              437
+25          25                 Greater Boston Area              411
+26          26                 Columbus, Ohio Area              394
+27          27              Greater St. Louis Area              382
+28          28               Orlando, Florida Area              344
+29          29              Greater San Diego Area              330
+..         ...                                 ...              ...
+68          68     Urbana-Champaign, Illinois Area               81
+69          69            Kalamazoo, Michigan Area               80
+70          70             Melbourne, Florida Area               79
+71          71                Wichita, Kansas Area               79
+72          72                Naples, Florida Area               75
+73          73              Saginaw, Michigan Area               75
+74          74              Lansing, Michigan Area               71
+75          75         Daytona Beach, Florida Area               71
+76          76              Savannah, Georgia Area               69
+77          77            Greater New Orleans Area               68
+78          78        Albuquerque, New Mexico Area               67
+79          79            Birmingham, Alabama Area               67
+80          80       Columbia, South Carolina Area               66
+81          81                    Hawaiian Islands               65
+82          82                Toronto, Canada Area               61
+83          83                  Mumbai Area, India               61
+84          84              London, United Kingdom               60
+85          85              Lakeland, Florida Area               60
+86          86              São Paulo Area, Brazil               59
+87          87         Chattanooga, Tennessee Area               59
+88          88          Hartford, Connecticut Area               59
+89          89               Des Moines, Iowa Area               58
+90          90         Fort Collins, Colorado Area               57
+91          91           Gainesville, Florida Area               56
+92          92                  Greater Omaha Area               55
+93          93                Tulsa, Oklahoma Area               52
+94          94              Anchorage, Alaska Area               50
+95          95            Huntsville, Alabama Area               50
+96          96               Bengaluru Area, India               49
+97          97       Providence, Rhode Island Area               45
+
+[98 rows x 3 columns] columns
+2019-09-20 16:26:44,330 - linkedIn-preprocessing - INFO - iupui - successfully read: followers, sheet: job_function, and the file has 26 rows and     Unnamed: 0                      Job function  Total followers
+0            0                        Operations             8974
+1            1               Healthcare Services             8694
+2            2              Business Development             8106
+3            3                         Education             8073
+4            4                             Sales             5658
+5            5                       Engineering             5229
+6            6            Information Technology             4983
+7            7     Community and Social Services             4571
+8            8                          Research             3452
+9            9                    Administrative             2939
+10          10                   Human Resources             2681
+11          11                           Finance             2637
+12          12                           Support             2627
+13          13    Program and Project Management             2310
+14          14                   Arts and Design             2002
+15          15                        Accounting             1846
+16          16           Media and Communication             1841
+17          17                         Marketing             1729
+18          18                             Legal             1427
+19          19                        Consulting             1213
+20          20                       Real Estate             1113
+21          21                 Quality Assurance              880
+22          22  Military and Protective Services              880
+23          23                        Purchasing              367
+24          24                  Entrepreneurship              356
+25          25                Product Management              312 columns
+2019-09-20 16:26:44,373 - linkedIn-preprocessing - INFO - iupui - successfully read: followers, sheet: industry, and the file has 99 rows and     Unnamed: 0                              Industry  Total followers
+0            0                Hospital & Health Care            12081
+1            1                      Higher Education             9369
+2            2   Information Technology and Services             3802
+3            3                                Retail             2891
+4            4                  Education Management             2852
+5            5                    Financial Services             2651
+6            6                            Automotive             2496
+7            7          Health, Wellness and Fitness             2469
+8            8                           Real Estate             2289
+9            9     Nonprofit Organization Management             2250
+10          10                             Insurance             2237
+11          11             Government Administration             1999
+12          12                          Construction             1965
+13          13                       Pharmaceuticals             1935
+14          14                     Computer Software             1859
+15          15                              Research             1812
+16          16                      Medical Practice             1494
+17          17             Marketing and Advertising             1414
+18          18                            Accounting             1412
+19          19                    Mental Health Care             1213
+20          20                              Internet             1194
+21          21                           Restaurants             1128
+22          22           Primary/Secondary Education             1123
+23          23                           Hospitality             1089
+24          24  Mechanical or Industrial Engineering             1029
+25          25                       Medical Devices              968
+26          26            Logistics and Supply Chain              961
+27          27                          Law Practice              846
+28          28                 Management Consulting              844
+29          29          Individual & Family Services              826
+..         ...                                   ...              ...
+69          69   Public Relations and Communications              304
+70          70                     Apparel & Fashion              296
+71          71                         Public Safety              290
+72          72               Architecture & Planning              286
+73          73                                 Music              271
+74          74                            Publishing              270
+75          75                        Graphic Design              268
+76          76                       Broadcast Media              262
+77          77                          Philanthropy              247
+78          78                       Arts and Crafts              243
+79          79                            E-Learning              238
+80          80                       Food Production              231
+81          81                           Photography              231
+82          82       Business Supplies and Equipment              211
+83          83                  Information Services              205
+84          84                              Printing              197
+85          85                              Fine Art              193
+86          86                               Farming              190
+87          87              Package/Freight Delivery              190
+88          88                          Fund-Raising              178
+89          89                             Cosmetics              177
+90          90                  Government Relations              177
+91          91                  Consumer Electronics              176
+92          92                       Mining & Metals              172
+93          93                             Furniture              168
+94          94              Renewables & Environment              164
+95          95                 Investment Management              159
+96          96           Computer & Network Security              158
+97          97                   Computer Networking              151
+98          98  Recreational Facilities and Services              150
+
+[99 rows x 3 columns] columns
+2019-09-20 16:26:44,410 - linkedIn-preprocessing - INFO - iupui - successfully read: followers, sheet: company_size, and the file has 9 rows and    Unnamed: 0 Company size  Total followers
+0           0       10001+            20091
+1           1    1001-5000            10312
+2           2   5001-10000             8657
+3           3       51-200             8338
+4           4        11-50             7284
+5           5      201-500             6088
+6           6         2-10             4816
+7           7     501-1000             4496
+8           8            1              640 columns
+2019-09-20 16:26:44,442 - linkedIn-preprocessing - INFO - iupui - successfully read: followers, sheet: seniority, and the file has 10 rows and    Unnamed: 0 Seniority  Total followers
+0           0     Entry            35685
+1           1    Senior            29634
+2           2  Director             6645
+3           3   Manager             6360
+4           4     Owner             3256
+5           5  Training             2825
+6           6        VP             2422
+7           7       CXO             2010
+8           8    Unpaid              527
+9           9   Partner              361 columns
+2019-09-20 16:26:44,443 - linkedIn-preprocessing - INFO - iupui start date 2018-07-01  end date 2019-09-18
+2019-09-20 16:26:45,401 - linkedIn-preprocessing - INFO - iupui - Successfully built, engagement_insights, has rows: 445 columns: 29
+2019-09-20 16:26:45,402 - linkedIn-preprocessing - INFO - iupui - Successfully built, top_engagement_posts, has rows: 68 columns: 14
+2019-09-20 16:26:45,402 - linkedIn-preprocessing - INFO - iupui - Successfully built, visitors by location, has rows: 207 columns: 3
+2019-09-20 16:26:45,402 - linkedIn-preprocessing - INFO - iupui - Successfully built, visitors by industry, has rows: 125 columns: 3
+2019-09-20 16:26:45,402 - linkedIn-preprocessing - INFO - iupui - Successfully built, followers by location, has rows: 98 columns: 3
+2019-09-20 16:26:45,402 - linkedIn-preprocessing - INFO - iupui - Successfully built, followers by industry, has rows: 99 columns: 3
+2019-09-20 16:26:45,402 - linkedIn-preprocessing - INFO - iupui - Successfully built, followers by seniority, has rows: 10 columns: 3

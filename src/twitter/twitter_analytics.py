@@ -82,8 +82,9 @@ class TweetsAPI:
                 if tweet.created_at < self.end_date and tweet.created_at > self.start_date:
                     tweets.append(tweet)
 
+
             ## Keep fetching the tweets
-            while (tmp_tweets[-1].created_at > self.start_date):
+            while (len(tmp_tweets)>0 and tmp_tweets[-1].created_at > self.start_date):
 
                 self.logger.info("Last Tweet @" + str(tmp_tweets[-1].created_at) + " - fetching some more tweets")
 
@@ -278,7 +279,9 @@ class TweetsAPI:
                 self.logger.error("[ERROR: TWEEPY API]", str(e))
             sys.exit()
         except Exception as e:
-            self.logger.error("[ERROR]: " + str(e))
+            type, value, traceback = sys.exc_info()
+            print('Error opening %s: %s' % (value.filename, value.strerror))
+            
             sys.exit()
 
     """

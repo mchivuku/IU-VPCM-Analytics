@@ -2,7 +2,7 @@
   "raw_data_dir": "../../data/raw_data/iupui/instagram",
   "processed_data_dir": "../../data/processed_data/iupui/instagram",
   "username": "@IUPUI",
-  "start_date": "2019-05-01",
+  "start_date": "2018-07-01",
   "end_date": "2019-08-09",
   "auth_file": "credentials/auth_iupui.k",
   "user_id":418110789,

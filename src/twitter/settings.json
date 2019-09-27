@@ -1,10 +1,10 @@
 {
-  "auth_file": "credentials/auth_iu.k",
-  "raw_data_dir": "../../data/raw_data/iu/twitter",
-  "processed_data_dir": "../../data/processed_data/iu/twitter",
-  "username": "@IndianaUniv",
-  "start_date": "2019-07-31",
-  "end_date": "2019-08-01",
-  "user_timeline_results_filename": "iu_twitter_data.csv",
-  "user_profile_results_filename": "iu_twitter_user_profile_data.csv"
+  "auth_file": "credentials/auth_iupui.k",
+  "raw_data_dir": "../../data/raw_data/iupui/twitter",
+  "processed_data_dir": "../../data/processed_data/iupui/twitter",
+  "username": "@iupui",
+  "start_date": "2018-07-31",
+  "end_date": "2019-09-18",
+  "user_timeline_results_filename": "indiana-university_purdue-university-indianapolis_twitter_data.csv",
+  "user_profile_results_filename": "indiana-university_purdue-university-indianapolis_twitter_user_profile_data.csv"
 }

@@ -1,6 +1,6 @@
 .ipynb_checkpoints/
 .~iu_bloomington_linkedIn__98030.twbr
-.data/*
+data/*
 *.csv
 src/.idea/workspace.xml
 src/.vscode/settings.json
@@ -35,4 +35,7 @@ data/processed_data/iu-bloomington/linkedIn/indiana-university-bl_visitor_demogr
 data/raw_data/iu-bloomington/linkedIn/indiana-university-bloomington_followers_1560260208689.xls
 data/raw_data/iu-bloomington/linkedIn/indiana-university-bloomington_updates_1560260253072.xls
 data/raw_data/iu-bloomington/linkedIn/indiana-university-bloomington_visitors_1560259203300.xls
+data/raw_data/iu-bloomington/twitter/indiana-university-bl_twitter_data.csv
+*.csv
+data/raw_data/iu-bloomington/twitter/indiana-university-bl_twitter_data.csv
 data/raw_data/iu-bloomington/twitter/indiana-university-bl_twitter_data.csv
