@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 .~iu_bloomington_linkedIn__98030.twbr
+src/notebooks/twitter_sentiment.pkl 
 data/raw_data/iu-bloomington/twitter/indiana-university-bl_twitter_data.csv
 data/*
 *.csv
